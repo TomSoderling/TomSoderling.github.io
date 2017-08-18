@@ -2,8 +2,9 @@
 published: true
 layout: post
 title: Turn your Mac into a BLE Peripheral Device
-author: tom
 date: 2017-08-17 12:00
+author: tom
+comments: true
 tags: [BLE]
 ---
 
