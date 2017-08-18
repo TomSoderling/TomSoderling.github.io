@@ -62,3 +62,9 @@ EchoCharacteristic - onWriteRequest: value = ab
 EchoCharacteristic - onReadRequest: value = ab
 
 ```
+
+To quit the node program, press Control + C  
+
+For more info, see the [bleno github page](https://github.com/sandeepmistry/bleno)  
+
+Enjoy!
