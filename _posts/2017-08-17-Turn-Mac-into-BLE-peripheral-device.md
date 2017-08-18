@@ -61,7 +61,6 @@ on -> advertisingStart: success
 EchoCharacteristic - onUnsubscribe
 EchoCharacteristic - onWriteRequest: value = ab
 EchoCharacteristic - onReadRequest: value = ab
-
 ```
 
 To quit the node program, press Control + C  
