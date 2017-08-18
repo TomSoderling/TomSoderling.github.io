@@ -23,7 +23,7 @@ Go to the [Node.js website](https://nodejs.org)
 Download the installer for the latest LTS version (v6.11.2 LTS at the time of writing)  
 Follow the installer prompts
 
-3. Download example files from noble github page
+3. Download example files from the noble github repo
 [Echo example](https://github.com/sandeepmistry/bleno/tree/master/examples/echo)  
 It includes two files: main.js & characteristic.js  
 Place these 2 files by themselves in a folder somewhere  
