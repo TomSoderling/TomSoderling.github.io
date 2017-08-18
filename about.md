@@ -9,7 +9,7 @@ permalink: /about/
     <img src="{{site.baseurl}}/images/trophyPhoto.jpg" width="200" />  
   </div>
   <div style="display: inline-block; width: 73%; vertical-align: top;">I'm an exuberant software developer, speaker, and open source contributor, with 10+ years experience building applications using the Microsoft technology stack. I specialize in developing cross-platform mobile apps using Xamarin technologies and am a 3-time Xamarin Certified Mobile Developer. <br/><br/>
-  I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer 
+  I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer at Polaris Industries working on the <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Ride Command</a> mobile app.
   <!--at <a href="https://www.mcomposer.com">Mobile Composer</a> and leading the development on our flagship moible app, Orchestrate.-->
   </div>
 </div>
@@ -29,7 +29,7 @@ permalink: /about/
 
   <br />
   <br />
-  I regularly attend and speak at the <a href="https://www.meetup.com/Minnesota-Enterprise-Mobile">MN Enterprise Mobile</a> meetup, so if you're in the area I'd highly recommend checking it out.
+  I regularly attend and speak at the <a href="https://www.meetup.com/Minnesota-Enterprise-Mobile">MN Enterprise Mobile</a> meetup for Xamarin developers, so if you're in the area I'd highly recommend checking it out.
   </div>
   <div style="display: inline-block;" align="top">
     <img src="{{site.baseurl}}/images/xcmdBadge.png" width="200" />  
