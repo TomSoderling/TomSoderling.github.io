@@ -45,6 +45,7 @@ node main.js
 [LightBlue for iOS](https://itunes.apple.com/us/app/lightblue-explorer-bluetooth-low-energy/id557428110?mt=8)  
 [LightBlue for MacOS](https://itunes.apple.com/us/app/lightblue/id639944780?mt=12)
 
+Any value you write to the Echo Characteristic (UUID: 0xEC0E) on the device should be echoed in the Terminal window  
 
 <img src="{{site.baseurl}}/images/MacAsBLEPeripheral/Devices.PNG" width="250" /> 
 <img src="{{site.baseurl}}/images/MacAsBLEPeripheral/EchoService.PNG" width="250" /> 
@@ -52,9 +53,7 @@ node main.js
 <img src="{{site.baseurl}}/images/MacAsBLEPeripheral/WriteValue.PNG" width="250" /> 
 
 
-Any value you write to the Echo Characteristic (UUID: 0xEC0E) on the device should be echoed in the Terminal window
-
-Output in Terminal
+Output in Terminal:
 ```
 State:  poweredOn
 on -> advertisingStart: success
