@@ -12,7 +12,7 @@ This guide will show you how to turn your Mac into a Bluetooth Low Energy (BLE) 
 
 Steps
 
-1. Check if you have node.js installed already
+1. Check if you have node.js installed already  
 In Terminal, run this command:
 ```
 node --version
