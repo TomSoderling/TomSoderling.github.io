@@ -46,10 +46,10 @@ node main.js
 [LightBlue for MacOS](https://itunes.apple.com/us/app/lightblue/id639944780?mt=12)
 
 
-<img src="{{site.baseurl}}/images/MacAsBLEPeripheral/Devices.PNG" width="250" />  
-<img src="{{site.baseurl}}/images/MacAsBLEPeripheral/EchoService.PNG" width="250" />  
+<img src="{{site.baseurl}}/images/MacAsBLEPeripheral/Devices.PNG" width="250" /> 
+<img src="{{site.baseurl}}/images/MacAsBLEPeripheral/EchoService.PNG" width="250" /> 
 <img src="{{site.baseurl}}/images/MacAsBLEPeripheral/EchoCharacteristic.PNG" width="250" /> 
-<img src="{{site.baseurl}}/images/MacAsBLEPeripheral/WriteValue.PNG" width="250" />  
+<img src="{{site.baseurl}}/images/MacAsBLEPeripheral/WriteValue.PNG" width="250" /> 
 
 
 Any value you write to the Echo Characteristic (UUID: 0xEC0E) on the device should be echoed in the Terminal window
