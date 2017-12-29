@@ -33,7 +33,7 @@ permalink: /about/
   <div style="display: inline-block;" align="top">
     <!-- <img src="{{site.baseurl}}/images/xcmdBadge.png" width="200" />   -->
     <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="200" />
-    <img class="featuredbadge" src="{{site.baseurl}}/images/planetxamarin-featured-badge.png" alt="Featured on Planet Xamarin badge">
+    <img src="{{site.baseurl}}/images/planetxamarin-featured-badge.png" alt="Featured on Planet Xamarin badge" width="200">
   </div>
 </div>
 
