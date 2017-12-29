@@ -8,7 +8,7 @@ permalink: /about/
   <div style="display: inline-block;" align="top">
     <img src="{{site.baseurl}}/images/trophyPhoto.jpg" width="200" />  
   </div>
-  <div style="display: inline-block; width: 73%; vertical-align: top;">I'm an exuberant software developer, speaker, and open source contributor, with 10+ years experience building applications using the Microsoft technology stack. I specialize in developing cross-platform mobile apps using Xamarin technologies and am a 4-time Xamarin Certified Mobile Developer. <br/><br/>
+  <div style="display: inline-block; width: 73%; vertical-align: top;">I'm an exuberant software developer, speaker, and open source contributor, with 10+ years experience building applications using the Microsoft technology stack. I specialize in developing cross-platform mobile apps using Xamarin technologies and am a 4-time Xamarin Certified Mobile Developer. (it's an old picture) <br/><br/>
   I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer at Polaris Industries working on the <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Ride Command</a> mobile app.
   </div>
 </div>
@@ -33,6 +33,7 @@ permalink: /about/
   <div style="display: inline-block;" align="top">
     <!-- <img src="{{site.baseurl}}/images/xcmdBadge.png" width="200" />   -->
     <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="200" />
+    <img class="featuredbadge" src="{{site.baseurl}}/images/planetxamarin-featured-badge.png" alt="Featured on Planet Xamarin badge">
   </div>
 </div>
 
