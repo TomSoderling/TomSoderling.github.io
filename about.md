@@ -30,10 +30,10 @@ permalink: /about/
   <br />
   I regularly attend and speak at the <a href="https://www.meetup.com/Minnesota-Enterprise-Mobile">MN Enterprise Mobile</a> meetup for Xamarin developers, so if you're in the area I'd highly recommend checking it out.
   </div>
-  <div style="display: inline-block;" align="right">
+  <div style="display: inline-block;" align="top">
     <!-- <img src="{{site.baseurl}}/images/xcmdBadge.png" width="200" />   -->
     <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="200" />
-    <img src="{{site.baseurl}}/images/planetxamarin-featured-badge.png" alt="Featured on Planet Xamarin badge" width="200">
+    <!-- <img src="{{site.baseurl}}/images/planetxamarin-featured-badge.png" alt="Featured on Planet Xamarin badge" width="200"> -->
   </div>
 </div>
 
