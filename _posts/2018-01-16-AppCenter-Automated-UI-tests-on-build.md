@@ -29,10 +29,10 @@ Here are the 5 pieces you need to integrate UI tests that run in Xamarin Test Cl
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/fivePieces.png" style="width: 1000px;"/>  
 
 
-## #1 and #2
+## Pieces #1 & #2
 
 
-## #4, #3, and part of #5
+## Pieces #4, #3, & part of #5
 
 Go to the Test beacon in App Center  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testBeacon.png" style="width: 200px;"/>  
@@ -49,7 +49,7 @@ For whatever reason, the directions from in App Center state to run the command 
 
 Good news - that command can be run as part of any Debug build pipeline by writing a tiny post-build bash script. It really only needs to contain that one line, and with the help of a guy that failed **34** times at it, you have nothing to worry about.  (Note: for iOS, Xamarin UI tests can only be run on Debug builds.)
 
-## #5
+## Piece #5
 
 Here is the App Center CLI (Command Line Interface) command that I used in my script.  Entire script file is included at the bottom of this post.    
 ```bash
@@ -68,6 +68,7 @@ and
 
 Let's break down what each of these 8 parameters are.  I'll try to explain what they are and what values you'll probably want to use for each.
 
+### Parameters 1 & 2
 ```bash
 --app "tomso/Pickster"  
 --devices "tomso/top-devices"  
@@ -75,6 +76,7 @@ Let's break down what each of these 8 parameters are.  I'll try to explain what 
 These first 2 are generated for you and should be pretty straight-forward.  Using App Center analytics I found the top 3 devices that users were running my app on, picked those devices when I created my new test run, and saved that device set under the name "top-devices". A device set is the combination of devices and OS versions, and you can make whatever combination you'd like.  
 1 of 34 builds spent on these.  
 
+### Parameter 3
 ```bash
 --app-path $APPCENTER_OUTPUT_DIRECTORY/Pickster.ipa
 ```
@@ -83,6 +85,7 @@ First tricky parameter. This is the file path to the .ipa file your build produc
 App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY + whatever your .ipa file name is.  
 5 of 34 builds spent on this.
 
+### Parameters 4 & 5
 ```bash
 --test-series "smoke-tests"  
 --locale "en_US"  
@@ -90,6 +93,7 @@ App Center has a environment variable that points to the folder that holds the a
 Last two easy ones. They're both generated for you. The first is the name of the Test Series you created and named earlier in App Center, and I have no idea what the second one is for.  I speak english, so I just left it there. ¯\_(ツ)_/¯  
 1 of 34 builds spent on these.  
 
+### Parameter 6
 ```bash
 --build-dir $APPCENTER_SOURCE_DIRECTORY/[your Xamarin UI Test project name]/bin/Debug
 ```
@@ -101,7 +105,7 @@ The generated command simply suggests "pathToUITestBuildDir" for this parameter 
 For reference, I'm using the ENABLE_TEST_CLOUD symbol in my AppDelegate to start up Calabash.  Could also use DEBUG, probably.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/appDelegateCode.png" style="width: 600px;"/> 
 
-
+### Parameter 7
 ```bash
 --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools
 ```
@@ -110,6 +114,7 @@ This is the folder where test-cloud.exe lives.  You'll find this in: /packages/X
 Notice that I'm using globbing (* character) in place of the version number portion (2.2.1 for example), so that when you update this NuGet package to a new version number it won't break your script.  
 7 of 34 builds spent on this.
 
+### Parameter 8
 ```bash
 --token $appCenterLoginApiToken
 ```
@@ -120,3 +125,7 @@ You have to be authenticated with App Center in order to run the "appcenter test
 # Final Script Details
 
 The post-build script needs to be named exactly "appcenter-post-build.sh", and put in your source repo in the same folder your solution (.sln) file lives in.  Here's more info on the [3 types of App Center build scripts](https://docs.microsoft.com/en-us/appcenter/build/custom/scripts/) you can write.
+
+
+# My Script File
+
