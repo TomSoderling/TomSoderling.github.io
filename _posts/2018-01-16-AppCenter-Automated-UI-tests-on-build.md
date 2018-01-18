@@ -43,7 +43,7 @@ With App Center builds, you have the option to run launch app on a real device a
 Next, create a new test run by clicking on the New Test Run button. It guides you through picking your devices, the framework the test are written in (Xamarin.UITest for me), and generates the command to run the tests in App Center, filling in some of the info for you.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 800px;"/>  
 
-This really only gets you part of the way there though. After I copied that generated command and pasted it into a bash script file, it took me exactly **34** builds before I had the UI tests working at all as part of my CI build. **Thirty**. **Four**. And that was with the help of App Center support towards the end. (Which is really great. They have a nice on-page chat window that you can paste screnshots into, and responses were usually really quick).  So hopefully this blog post will save you a bit of time.    
+This really only gets you part of the way there though. After I copied that generated command, it took me exactly **34** builds before I had the UI tests working at all as part of my CI build. **Thirty**. **Four**. And that was with the help of App Center support towards the end. (Which is really great. They have a nice on-page chat window that you can paste screnshots into, and responses were usually really quick).  So hopefully this blog post will save you a bit of time.    
 
 For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly **L-A-M-E**. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
