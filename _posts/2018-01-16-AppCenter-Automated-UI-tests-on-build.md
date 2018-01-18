@@ -70,14 +70,23 @@ These first 2 are generated for you and should be pretty straight-forward.  Usin
 ```bash
 --app-path pathToFile.ipa  
 ```
-First tricky parameter. This is the file path to the .ipa file your build produces.
+First tricky parameter. This is the file path to the .ipa file your build produces. Yes, even though it's a Debug build, it still creates an .ipa file if you've chosen to do Device Builds.  Make sure you have.  <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/buildType.png" style="width: 200px;"/>  
+App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY. Then add "/" + the name of your .ipa file.  
 
---test-series "launch-tests"  
+```bash
+--test-series "smoke-tests"  
 --locale "en_US"  
---build-dir [pathToUITestBuildDir] (Yes, this is really the UI test project build directory. When built with the solution, it's in the APPCENTER_SOURCE_DIRECTORY. Use globbing (*), so updating the package version won't break this script.)  
+```
+Last two easy ones. I'm pretty sure 0 of 34 builds were spend on these, and they're both generated for you. The first is the name of the Test Series you created and named earlier in App Center, and I have no idea what the second one is for.  I speak english, so I just left it there. ¯\_(ツ)_/¯
+
+```bash
+--build-dir [pathToUITestBuildDir] 
+```
+Yes, this is really the UI test project build directory. When built with the solution, it's in the $APPCENTER_SOURCE_DIRECTORY. Use globbing (*), so that when you update this NuGet package to a new version number it won't break your script.
+
 --uitest-tools-dir [where to find test-cloud.exe] (see /packages/Xamarin.UITest.2.2.1/tools in APPCENTER_SOURCE_DIRECTORY)  
 --token [The name of the App Center build environment variable that contains your App Center API token generated in step 1.1 above]  
-```
+
 
 
 The post-build script needs to be named exactly "appcenter-post-build.sh", and put in your source repo in the same folder your solution (.sln) file lives in.  Here's more info on the [3 types of App Center build scripts](https://docs.microsoft.com/en-us/appcenter/build/custom/scripts/) you can write.
