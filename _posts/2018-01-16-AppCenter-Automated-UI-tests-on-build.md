@@ -11,12 +11,18 @@ Visual Studio App Center continues to amaze and impress me. Over Christmast brea
 It's surprising how quickly I've already taken them for granted. I push code, they build, run the automated launch test on a real device, I get a nice email to install the build on test devices, and can push it to the app stores if it makes the cut. So nice. It's hard to imagine I used to do it any other way.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/CIBuilds.png" style="width: 700px;"/> 
 
-Apart from the builds, I think the next most important feature of a good DevOps pipeline is automated testing. We all write unit tests (right???!), which I think is really valuable, but even on my small apps, there are functional areas that I rarely test anymore - now that development of that feature is done. For example, one of my apps, Pickster, features a ListView of names where you can swipe on any name and be presented with a context action to delete the name. I realized the other day that I haven't personally tested that functionality for probably 6 months or so. It's just not part of my regular use. I add names a lot as I'm developing and testing, but hardly ever delete one or use those context actions. This app doesn't even really do a lot, but has areas that rarely get manual testing love. Think of big apps. Humans just aren't good at testing everything, or testing it the same every time.  
+Apart from the builds, I think the next most important feature of a good DevOps pipeline is automated testing. We all write unit tests (right???!), which I think is really valuable, but even on my small apps, there are functional areas that I rarely test anymore - now that development of that feature is done.  
+For example, one of my apps, Pickster, features a ListView of names where you can swipe on any name and be presented with a context action to delete the name. I realized the other day that I haven't personally tested that functionality for probably 6 months or so. It's just not part of my regular use. I add names a lot as I'm developing and testing, but hardly ever delete one or use those context actions. This app doesn't even really do a lot, but has areas that rarely get manual testing love. Think of big apps. Humans just aren't good at testing everything, or testing it the same every time.  
 
 Enter automated UI tests.  
 
 I really like to use the [Xamarin UI Test Recorder](https://developer.xamarin.com/guides/testcloud/testrecorder/) to get the inital scaffolding of a UI test built and then tweak it from there. Using the recorder, you simply tap/type/swipe around the app and use it like you normally would, and the test recorder translates that into Xamarin.UITest commands that make up your automated UI test.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testrecorder.png" style="width: 1000px;"/> 
+
+
+When you click the New Test Run button in the Test beacon of App Center, it guides you through picking your devices and generates the command to run the tests in App Center, filling in some of the info for you.  
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 500px;"/> 
+This really only gets you part of the way there though. It took me exactly **34** builds after I generated that command until I had the automated UI tests working as part of my CI build. Thirty. Four. And that was with the help of App Center support towards the end. (Which is really great. They have a nice on-page chat window, and responses were usually really quick)  
 
 
 
