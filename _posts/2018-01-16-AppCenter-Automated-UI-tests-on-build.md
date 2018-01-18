@@ -43,7 +43,7 @@ With App Center builds, you have the option to run launch app on a real device a
 Next, create a new test run by clicking on the New Test Run button. It guides you through picking your devices, the framework the test are written in (Xamarin.UITest for me), and generates the command to run the tests in App Center, filling in some of the info for you.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 800px;"/>  
 
-This really only gets you part of the way there though. After I copied that generated command, it took me exactly **34** builds before I had the UI tests working at all as part of my CI build. **Thirty**. **Four**. And that was with the help of App Center support towards the end. (Which is really great. They have a nice on-page chat window that you can paste screnshots into, and responses were usually really quick).  So hopefully this blog post will save you a bit of time.    
+This really only gets you part of the way there though. After I copied that generated command, it took me exactly **34** builds before I had the UI tests working at all as part of my CI build. **Thirty**. **Four**. And that was with the help of App Center support. (Which is pretty great. They have a nice on-page chat window that you can paste screnshots into, and responses were usually quick).  So hopefully this blog post will save you a bit of time.    
 
 For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly **L-A-M-E**. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
@@ -53,7 +53,7 @@ Good news - that command can be run as part of any Debug build pipeline by writi
 
 Here is the App Center CLI (Command Line Interface) command that you need to put in the script:  
 ```bash
-appcenter test run uitest --app $appName --devices $deviceSetName --app-path $APPCENTER_OUTPUT_DIRECTORY/Pickster.ipa --test-series $testSeriesName --locale "en_US" --build-dir $APPCENTER_SOURCE_DIRECTORY/Pickster.UITests/bin/Debug --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools --token $appCenterLoginApiToken 
+appcenter test run uitest --app "tomso/Pickster" --devices "tomso/top-devices" --app-path $APPCENTER_OUTPUT_DIRECTORY/Pickster.ipa --test-series "smoke-tests" --locale "en_US" --build-dir $APPCENTER_SOURCE_DIRECTORY/Pickster.UITests/bin/Debug --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools --token $appCenterLoginApiToken 
 ```
 
 Note that this command has 8 parameters, instead of the wimpy 6 in the command that App Center generated for you. The extras are crucial, and are:  
@@ -75,9 +75,10 @@ Let's break down what each of these 8 parameters are.  I'll try to explain what 
 These first 2 are generated for you and should be pretty straight-forward.  Using App Center analytics I found the top 3 devices that users were running my app on, picked those devices when I created my new test run, and saved that device set under the name "top-devices". A device set is the combination of devices and OS versions, and you can make whatever combination you'd like.  1 of 34 builds spent on these.  
 
 ```bash
---app-path pathToFile.ipa  
+--app-path Pickster.ipa  
 ```
-First tricky parameter. This is the file path to the .ipa file your build produces. Yes, even though it's a Debug build, it still creates an .ipa file if you've chosen to do Device Builds.  Make sure you have.  <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/buildType.png" style="width: 200px;"/>  
+First tricky parameter. This is the file path to the .ipa file your build produces. Yes, even though it's a Debug build, it still creates an .ipa file if you've chosen to do Device Builds.  Make sure you have in your App Center build configuration settings.  
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/buildType.png" style="width: 500px;"/>  
 App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY. Then add "/" + the name of your .ipa file.  5 of 34 builds spent on this.
 
 ```bash
@@ -89,17 +90,20 @@ Last two easy ones. They're both generated for you. The first is the name of the
 ```bash
 --build-dir $APPCENTER_SOURCE_DIRECTORY/[your Xamarin UI Test project name]/bin/Debug
 ```
-The generated command simply suggests "pathToUITestBuildDir" for this parameter value. Yes, make no mistake, this is really the UI test project build directory. Your Xamarin UI Test project MUST be built as part of your App Center build, so that meant for me, I had to build the app solution - not simply the iOS project like other builds. When built, the output goes into the $APPCENTER_SOURCE_DIRECTORY, specifically in the /bin/Debug folder. 15 of 34 builds spent on this.
+The generated command simply suggests "pathToUITestBuildDir" for this parameter value. Yes, make no mistake, this is really the UI test project build directory. Your Xamarin UI Test project MUST be built as part of your App Center build, so that meant for me, I had to build the app solution - not simply the iOS project like other builds. When built, the output goes into the $APPCENTER_SOURCE_DIRECTORY, specifically in the /bin/Debug folder.  
+12 of 34 builds spent on this.
 
 ```bash
 --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools
 ```
-This is the folder where test-cloud.exe lives.  You'll find this in: /packages/Xamarin.UITest.[whatever version number]/tools in $APPCENTER_SOURCE_DIRECTORY. Notice that I'm using globbing (* character) in place of the version number portion (2.2.1 for example), so that when you update this NuGet package to a new version number it won't break your script.  10 of 34 builds spent on this.
+This is the folder where test-cloud.exe lives.  You'll find this in: /packages/Xamarin.UITest.[whatever version number]/tools in $APPCENTER_SOURCE_DIRECTORY. Notice that I'm using globbing (* character) in place of the version number portion (2.2.1 for example), so that when you update this NuGet package to a new version number it won't break your script.  
+7 of 34 builds spent on this.
 
 ```bash
---token [API token]
+--token $appCenterLoginApiToken
 ```
-You have to be authenticated with App Center in order to run the appcenter test run uitest command. This is where you put the name of the App Center build environment variable that contains your App Center API token generated in step 1 and 2 above.  It's best to use an env. variable so you don't have to check in a sensitive API key into source control.  8 of 34 builds spent on this. (I didn't know this parameter value even existed for a long time)
+You have to be authenticated with App Center in order to run the "appcenter test run uitest" command. This is where you put the name of the App Center build environment variable that contains your App Center API token generated in step 1 and 2 above.  It's best to use an env. variable so you don't have to check in a sensitive API key into source control.  
+9 of 34 builds spent on this. This is the best kept secret of App Center. I didn't know this parameter even existed for a long time, and haven't seen any documentation that even mentions it.  
 
 
 # Final Script Details
