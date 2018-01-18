@@ -80,7 +80,7 @@ These first 2 are generated for you and should be pretty straight-forward.  Usin
 ```
 First tricky parameter. This is the file path to the .ipa file your build produces. Yes, even though it's a Debug build, it still creates an .ipa file if you've chosen to do Device Builds.  Make sure you have in your App Center build configuration settings.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/buildType.png" style="width: 500px;"/>  
-App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY + whatever your .ipa file name is.
+App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY + whatever your .ipa file name is.  
 5 of 34 builds spent on this.
 
 ```bash
