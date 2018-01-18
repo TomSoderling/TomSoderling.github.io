@@ -36,7 +36,6 @@ Here are the 5 pieces you need to integrate UI tests that run in Xamarin Test Cl
 You have to be authenticated with App Center in order to run the "appcenter test run uitest" command.  
 Follow [steps 1-5 here](https://docs.microsoft.com/en-us/appcenter/api-docs/) to generate an App Center API token.  
 Using the build configuration settings, create a new build environment variable named "appCenterLoginApiToken" or something. For its value, paste in the token you just generated.  This env. variable can now be used in our post-build script.  
-<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/postBuildScript.png" style="width: 1000px;"/>  
 
 
 ## Pieces #4, #3, and part of #5
