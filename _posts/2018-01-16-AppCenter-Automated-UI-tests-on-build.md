@@ -34,7 +34,12 @@ Here are the 5 pieces you need to integrate UI tests that run in Xamarin Test Cl
 
 ## #4, #3, and part of #5
 
-Go to the Test beacon in App Center <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testBeacon.png" style="width: 200px;"/>  and click on the grey Test Series button <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testButtons.png" style="width: 200px;"/>  With CI builds, you have the option to launch the app on a test device at the end of a build. That's a test series App Center creates for you named launch-tests.  You'll want to create and name a new one - like "smoke-tests" or something.  
+Go to the Test beacon in App Center  
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testBeacon.png" style="width: 200px;"/>  
+and click on the grey Test Series button  <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testButtons.png" style="width: 200px;"/>  
+
+With App Center builds, you have the option to run launch app on a real device at the end of a build - just to make sure it'll launch. That's a test series App Center creates for you named launch-tests.  You'll want to create and name a new one - like "smoke-tests" or whatever.  
+
 Next, create a new test run by clicking on the New Test Run button. It guides you through picking your devices, the framework the test are written in (Xamarin.UITest for me), and generates the command to run the tests in App Center, filling in some of the info for you.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 800px;"/>  
 
@@ -42,7 +47,9 @@ This really only gets you part of the way there though. After I copied that gene
 
 For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly **L-A-M-E**. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
-Good news - that command can be run as part of any Debug build pipeline by writing a tiny post-build bash script. It really only needs to contain that one line, and with the help of a guy that failed **34** times at it, you have nothing to worry about.  (Note: UI tests can only be run on Debug builds.)
+Good news - that command can be run as part of any Debug build pipeline by writing a tiny post-build bash script. It really only needs to contain that one line, and with the help of a guy that failed **34** times at it, you have nothing to worry about.  (Note: for iOS, Xamarin UI tests can only be run on Debug builds.)
+
+## #5
 
 Here is the App Center CLI (Command Line Interface) command that you need to put in the script:  
 ```bash
@@ -65,28 +72,36 @@ Let's break down what each of these 8 parameters are.  I'll try to explain what 
 --app "tomso/Pickster"  
 --devices "tomso/top-devices"  
 ```
-These first 2 are generated for you and should be pretty straight-forward.  Using App Center analytics I found the top 3 devices that users were running my app on, picked those devices when I created my new test run, and saved that device set under the name "top-devices". A device set is the combination of devices and OS versions.
+These first 2 are generated for you and should be pretty straight-forward.  Using App Center analytics I found the top 3 devices that users were running my app on, picked those devices when I created my new test run, and saved that device set under the name "top-devices". A device set is the combination of devices and OS versions, and you can make whatever combination you'd like.  1 of 34 builds spent on these.  
 
 ```bash
 --app-path pathToFile.ipa  
 ```
 First tricky parameter. This is the file path to the .ipa file your build produces. Yes, even though it's a Debug build, it still creates an .ipa file if you've chosen to do Device Builds.  Make sure you have.  <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/buildType.png" style="width: 200px;"/>  
-App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY. Then add "/" + the name of your .ipa file.  
+App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY. Then add "/" + the name of your .ipa file.  5 of 34 builds spent on this.
 
 ```bash
 --test-series "smoke-tests"  
 --locale "en_US"  
 ```
-Last two easy ones. I'm pretty sure 0 of 34 builds were spend on these, and they're both generated for you. The first is the name of the Test Series you created and named earlier in App Center, and I have no idea what the second one is for.  I speak english, so I just left it there. ¯\_(ツ)_/¯
+Last two easy ones. They're both generated for you. The first is the name of the Test Series you created and named earlier in App Center, and I have no idea what the second one is for.  I speak english, so I just left it there. ¯\_(ツ)_/¯  1 of 34 builds spent on these.  
 
 ```bash
---build-dir [pathToUITestBuildDir] 
+--build-dir $APPCENTER_SOURCE_DIRECTORY/[your Xamarin UI Test project name]/bin/Debug
 ```
-Yes, this is really the UI test project build directory. When built with the solution, it's in the $APPCENTER_SOURCE_DIRECTORY. Use globbing (*), so that when you update this NuGet package to a new version number it won't break your script.
+The generated command simply suggests "pathToUITestBuildDir" for this parameter value. Yes, make no mistake, this is really the UI test project build directory. Your Xamarin UI Test project MUST be built as part of your App Center build, so that meant for me, I had to build the app solution - not simply the iOS project like other builds. When built, the output goes into the $APPCENTER_SOURCE_DIRECTORY, specifically in the /bin/Debug folder. 15 of 34 builds spent on this.
 
---uitest-tools-dir [where to find test-cloud.exe] (see /packages/Xamarin.UITest.2.2.1/tools in APPCENTER_SOURCE_DIRECTORY)  
---token [The name of the App Center build environment variable that contains your App Center API token generated in step 1.1 above]  
+```bash
+--uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools
+```
+This is the folder where test-cloud.exe lives.  You'll find this in: /packages/Xamarin.UITest.[whatever version number]/tools in $APPCENTER_SOURCE_DIRECTORY. Notice that I'm using globbing (* character) in place of the version number portion (2.2.1 for example), so that when you update this NuGet package to a new version number it won't break your script.  10 of 34 builds spent on this.
+
+```bash
+--token [API token]
+```
+You have to be authenticated with App Center in order to run the appcenter test run uitest command. This is where you put the name of the App Center build environment variable that contains your App Center API token generated in step 1 and 2 above.  It's best to use an env. variable so you don't have to check in a sensitive API key into source control.  8 of 34 builds spent on this. (I didn't know this parameter value even existed for a long time)
 
 
+# Final Script Details
 
 The post-build script needs to be named exactly "appcenter-post-build.sh", and put in your source repo in the same folder your solution (.sln) file lives in.  Here's more info on the [3 types of App Center build scripts](https://docs.microsoft.com/en-us/appcenter/build/custom/scripts/) you can write.
