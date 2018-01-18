@@ -51,7 +51,7 @@ Good news - that command can be run as part of any Debug build pipeline by writi
 
 ## #5
 
-Here is the App Center CLI (Command Line Interface) command that you need to put in the script:  
+Here is the App Center CLI (Command Line Interface) command that I used in my script.  Entire script file is included at the bottom of this post.    
 ```bash
 appcenter test run uitest --app "tomso/Pickster" --devices "tomso/top-devices" --app-path $APPCENTER_OUTPUT_DIRECTORY/Pickster.ipa --test-series "smoke-tests" --locale "en_US" --build-dir $APPCENTER_SOURCE_DIRECTORY/Pickster.UITests/bin/Debug --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools --token $appCenterLoginApiToken 
 ```
@@ -66,7 +66,7 @@ and
 --token
 ```  
 
-Let's break down what each of these 8 parameters are.  I'll try to explain what they are and what values you'll probably want to use for them.
+Let's break down what each of these 8 parameters are.  I'll try to explain what they are and what values you'll probably want to use for each.
 
 ```bash
 --app "tomso/Pickster"  
@@ -76,11 +76,11 @@ These first 2 are generated for you and should be pretty straight-forward.  Usin
 1 of 34 builds spent on these.  
 
 ```bash
---app-path Pickster.ipa  
+--app-path $APPCENTER_OUTPUT_DIRECTORY/Pickster.ipa
 ```
 First tricky parameter. This is the file path to the .ipa file your build produces. Yes, even though it's a Debug build, it still creates an .ipa file if you've chosen to do Device Builds.  Make sure you have in your App Center build configuration settings.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/buildType.png" style="width: 500px;"/>  
-App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY. Then add "/" + the name of your .ipa file.  
+App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY + whatever your .ipa file name is.
 5 of 34 builds spent on this.
 
 ```bash
