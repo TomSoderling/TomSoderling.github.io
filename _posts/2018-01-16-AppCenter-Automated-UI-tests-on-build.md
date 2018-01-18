@@ -5,7 +5,7 @@ title: How to Run Automated UI Tests from a VS App Center Build
 date: 2018-01-17 01:23
 author: tom
 comments: true
-tags: [Visual Studio App Center, Xamarin, Xamarin.UITest, UI Test]
+tags: [Visual Studio App Center, Xamarin, Xamarin.UITest, UI Test, iOS]
 ---
 Visual Studio App Center continues to amaze and impress me. Over Christmast break, I set up CI (Continuous Integration) and Release/App Store builds for all my little app projects - which was truely a delightful experience - and they've been humming along smoothly. 
 It's surprising how quickly I've already taken them for granted. I push code, they build, run the automated launch test on a real device, I get a nice email to install the build on test devices, and can push it to the app stores if it makes the cut. So nice. It's hard to imagine I used to do it any other way.  
@@ -21,9 +21,20 @@ I really like to use the [Xamarin UI Test Recorder](https://developer.xamarin.co
 
 More info on how to get started writing and running Xamarin UI tests [here](https://developer.xamarin.com/guides/testcloud/uitest/)  
 
-Okay, so you've got some UI tests written and running locally on simulator or device - great. Now we want to run them in Xamarin Test Cloud on that huge collection of real mobile devices they've got. 3017 last I heard.  
+Okay, so you've got some UI tests written and running locally on simulator or device - great. Now we want to run them in Xamarin Test Cloud on that huge collection of real mobile devices they've got. 3017 last I heard.  The following directions are for an iOS build, but should be similar for Android too.  
 
-Start by going to the Test beacon in App Center <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testBeacon.png" style="width: 200px;"/>  and click on the grey Test Series button <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testButtons.png" style="width: 200px;"/>  With CI builds, you have the option to launch the app on a test device at the end of a build. That's a test series App Center creates for you named launch-tests.  You'll want to create and name a new one - like "smoke-tests" or something.  
+# Let's Do It
+
+Here are the 5 pieces you need to integrate UI tests that run in Xamarin Test Cloud into your App Center builds  
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/fivePieces.png" style="width: 1000px;"/>  
+
+
+## #1 and #2
+
+
+## #4, #3, and part of #5
+
+Go to the Test beacon in App Center <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testBeacon.png" style="width: 200px;"/>  and click on the grey Test Series button <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testButtons.png" style="width: 200px;"/>  With CI builds, you have the option to launch the app on a test device at the end of a build. That's a test series App Center creates for you named launch-tests.  You'll want to create and name a new one - like "smoke-tests" or something.  
 Next, create a new test run by clicking on the New Test Run button. It guides you through picking your devices, the framework the test are written in (Xamarin.UITest for me), and generates the command to run the tests in App Center, filling in some of the info for you.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 800px;"/>  
 
