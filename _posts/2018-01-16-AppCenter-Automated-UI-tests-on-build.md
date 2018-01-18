@@ -26,9 +26,9 @@ Next, create a new test run by clicking on the New Test Run button. It guides yo
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 800px;"/>  
 This really only gets you part of the way there though. After I copied that generated command, it took me exactly **34** builds before I had the UI tests working as part of my CI build. **Thirty**. **Four**. And that was with the help of App Center support towards the end. (Which is really great. They have a nice on-page chat window that you can paste screnshots into, and responses were usually really quick).  So hopefully this blog post will save you a bit of time.    
 
-For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly L-A-M-E. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
+For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly **L-A-M-E**. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
-Good news, that command can be run as part of your build pipeline by writing a really small post-build script. It really only needs to contain that one line, and with the help of a guy that failed 34 times at it, you should do just fine.  
+Good news, that command can be run as part of your build pipeline by writing a really small post-build script. It really only needs to contain that one line, and with the help of a guy that failed **34** times at it, you should do just fine.  
 
 Here is the App Center CLI (Command Line Interface) command that you need to put in the script:  
 ```bash
