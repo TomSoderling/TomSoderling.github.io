@@ -58,7 +58,7 @@ Here is the App Center CLI (Command Line Interface) command that I used in my sc
 appcenter test run uitest --app "tomso/Pickster" --devices "tomso/top-devices" --app-path $APPCENTER_OUTPUT_DIRECTORY/Pickster.ipa --test-series "smoke-tests" --locale "en_US" --build-dir $APPCENTER_SOURCE_DIRECTORY/Pickster.UITests/bin/Debug --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools --token $appCenterLoginApiToken 
 ```
 
-Note that this command has 8 parameters, instead of the wimpy 6 in the command that App Center generated for you. The extras are crucial, and are:  
+Note that this command has 8 parameters, instead of the wimpy 6 that App Center generated for you. The extras are crucial, and are:  
 
 ```bash
 --uitest-tools-dir 
