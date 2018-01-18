@@ -180,4 +180,7 @@ echo "**************************************************************************
 ```
 
 
-Enjoy sitting back sipping lemonade while the machines do your bidding. Please hit me up on twitter if you have questions or feedback!
+Enjoy sitting back sipping lemonade while the machines do your bidding.  
+
+Please feel free to contact me on twitter if you have questions or feedback!  
+
