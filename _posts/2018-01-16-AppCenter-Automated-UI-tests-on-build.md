@@ -72,20 +72,23 @@ Let's break down what each of these 8 parameters are.  I'll try to explain what 
 --app "tomso/Pickster"  
 --devices "tomso/top-devices"  
 ```
-These first 2 are generated for you and should be pretty straight-forward.  Using App Center analytics I found the top 3 devices that users were running my app on, picked those devices when I created my new test run, and saved that device set under the name "top-devices". A device set is the combination of devices and OS versions, and you can make whatever combination you'd like.  1 of 34 builds spent on these.  
+These first 2 are generated for you and should be pretty straight-forward.  Using App Center analytics I found the top 3 devices that users were running my app on, picked those devices when I created my new test run, and saved that device set under the name "top-devices". A device set is the combination of devices and OS versions, and you can make whatever combination you'd like.  
+1 of 34 builds spent on these.  
 
 ```bash
 --app-path Pickster.ipa  
 ```
 First tricky parameter. This is the file path to the .ipa file your build produces. Yes, even though it's a Debug build, it still creates an .ipa file if you've chosen to do Device Builds.  Make sure you have in your App Center build configuration settings.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/buildType.png" style="width: 500px;"/>  
-App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY. Then add "/" + the name of your .ipa file.  5 of 34 builds spent on this.
+App Center has a environment variable that points to the folder that holds the artifacts of the build. Reference it in your bash script as $APPCENTER_OUTPUT_DIRECTORY. Then add "/" + the name of your .ipa file.  
+5 of 34 builds spent on this.
 
 ```bash
 --test-series "smoke-tests"  
 --locale "en_US"  
 ```
-Last two easy ones. They're both generated for you. The first is the name of the Test Series you created and named earlier in App Center, and I have no idea what the second one is for.  I speak english, so I just left it there. ¯\_(ツ)_/¯  1 of 34 builds spent on these.  
+Last two easy ones. They're both generated for you. The first is the name of the Test Series you created and named earlier in App Center, and I have no idea what the second one is for.  I speak english, so I just left it there. ¯\_(ツ)_/¯  
+1 of 34 builds spent on these.  
 
 ```bash
 --build-dir $APPCENTER_SOURCE_DIRECTORY/[your Xamarin UI Test project name]/bin/Debug
