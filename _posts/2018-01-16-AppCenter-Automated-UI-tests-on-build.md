@@ -144,6 +144,12 @@ Here's more info on the [3 types of App Center build scripts](https://docs.micro
 [Find it on github here](https://github.com/TomSoderling/VSAppCenter/blob/master/appcenter-post-build.sh)
 
 
+
+
+# Enjoy!
+
 Enjoy sitting back sipping lemonade while the machines do your bidding.  
+
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/automatedTests.png" style="width: 700px;"/>  
 
 Please feel free to contact me on twitter if you have questions or feedback!  
