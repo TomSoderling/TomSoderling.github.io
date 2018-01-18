@@ -17,7 +17,9 @@ For example, one of my apps, Pickster, features a ListView of names where you ca
 Enter automated UI tests.  
 
 I really like to use the [Xamarin UI Test Recorder](https://developer.xamarin.com/guides/testcloud/testrecorder/) to get the inital scaffolding of a UI test built and then tweak it from there. Using the recorder, you simply tap/type/swipe around the app and use it like you normally would, and the test recorder translates that into Xamarin.UITest commands that make up your automated UI test.  
-<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testrecorder.png" style="width: 1000px;"/> 
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testrecorder.png" style="width: 1000px;"/>  
+
+More info on how to get started writing and running Xamarin UI tests [here](https://developer.xamarin.com/guides/testcloud/uitest/)  
 
 Okay, so you've got some UI tests written and running locally on simulator or device - great. Now we want to run them in Xamarin Test Cloud on that huge collection of real mobile devices they've got. 3017 last I heard.  
 
@@ -28,14 +30,14 @@ This really only gets you part of the way there though. After I copied that gene
 
 For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly **L-A-M-E**. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
-Good news, that command can be run as part of your build pipeline by writing a really small post-build script. It really only needs to contain that one line, and with the help of a guy that failed **34** times at it, you should do just fine.  
+Good news - that command can be run as part of any Debug build pipeline by writing a tiny post-build bash script. It really only needs to contain that one line, and with the help of a guy that failed **34** times at it, you have nothing to worry about.  (Note: UI tests can only be run on Debug builds.)
 
 Here is the App Center CLI (Command Line Interface) command that you need to put in the script:  
 ```bash
 appcenter test run uitest --app $appName --devices $deviceSetName --app-path $APPCENTER_OUTPUT_DIRECTORY/Pickster.ipa --test-series $testSeriesName --locale "en_US" --build-dir $APPCENTER_SOURCE_DIRECTORY/Pickster.UITests/bin/Debug --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools --token $appCenterLoginApiToken 
 ```
 
-Note that this command has 8 parameters, instead of the wimpy 6 in the command that App Center generated for you. The extras are crucial, and are 
+Note that this command has 8 parameters, instead of the wimpy 6 in the command that App Center generated for you. The extras are crucial, and are:  
 
 ```bash
 --uitest-tools-dir 
@@ -50,7 +52,13 @@ Let's break down what each of these 8 parameters are.  I'll try to explain what 
 ```bash
 --app "tomso/Pickster"  
 --devices "tomso/top-devices"  
+```
+These first 2 are generated for you and should be pretty straight-forward.  Using App Center analytics I found the top 3 devices that users were running my app on, picked those devices when I created my new test run, and saved that device set; which is the combination of devices and OS versions.
+
+```bash
 --app-path pathToFile.ipa  
+```
+
 --test-series "launch-tests"  
 --locale "en_US"  
 --build-dir [pathToUITestBuildDir] (Yes, this is really the UI test project build directory. When built with the solution, it's in the APPCENTER_SOURCE_DIRECTORY. Use globbing (*), so updating the package version won't break this script.)  
