@@ -19,13 +19,16 @@ Enter automated UI tests.
 I really like to use the [Xamarin UI Test Recorder](https://developer.xamarin.com/guides/testcloud/testrecorder/) to get the inital scaffolding of a UI test built and then tweak it from there. Using the recorder, you simply tap/type/swipe around the app and use it like you normally would, and the test recorder translates that into Xamarin.UITest commands that make up your automated UI test.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testrecorder.png" style="width: 1000px;"/> 
 
+Okay, so you've got some UI tests written and running locally on simulator or device - great. Now we want to run them in Xamarin Test Cloud on that huge collection of real mobile devices they've got. 3017 last I heard.  
 
-When you click the New Test Run button in the Test beacon of App Center, it guides you through picking your devices and generates the command to run the tests in App Center, filling in some of the info for you.  
+Start by going to the Test beacon in App Center and click on the grey Test Series button. With CI builds, you have the option to launch the app on a test device at the end of a build. That's a test series named launch-tests.  You'll want to create and name a new one. Say "smoke-tests" or something.  
+Next, create a new test run by clicking on the New Test Run button. It guides you through picking your devices, the framework the test are written in (Xamarin.UITest for me), and generates the command to run the tests in App Center, filling in some of the info for you.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 500px;"/> 
-This really only gets you part of the way there though. It took me exactly **34** builds after I generated that command until I had the automated UI tests working as part of my CI build. Thirty. Four. And that was with the help of App Center support towards the end. (Which is really great. They have a nice on-page chat window, and responses were usually really quick)  
+This really only gets you part of the way there though. It took me exactly **34** builds after I generated that command until I had the automated UI tests working as part of my CI build. Thirty. Four. And that was with the help of App Center support towards the end. (Which is really great. They have a nice on-page chat window, and responses were usually really quick). Hence this blog post.  
 
+For whatever reason, the directions from in App Center state to run the command on your LOCAL machine to run the tests in App Center. Well that is incredibly L-A-M-E. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
-
+Good news, that command can be run as part of your build pipeline by writing a really small post-build script. It really only needs to contain that one line, and with the help of a guy that failed 34 times at it, you should do just fine.  
 
 Here is the App Center CLI (Command Line Interface) command that you need to put in the script:  
 ```bash
@@ -34,12 +37,11 @@ appcenter test run uitest --app $appName --devices $deviceSetName --app-path $AP
 
 ```
 
-Let's break down what each of these 8 parameters are.
+Note that this command has 8 parameters, instead of the wimpy 6 in the command that App Center generated for you.  The extras are crucial, and are --uitest-tools-dir and --token
 
-```csharp 
-appcenter test run uitest 
-```
+Let's break down what each of these 8 parameters are.  I'll try to explain what they are and what values you'll probably want to use for them.
 
+```bash
 --app "tomso/Pickster"  
 --devices "tomso/top-devices"  
 --app-path pathToFile.ipa  
@@ -48,3 +50,4 @@ appcenter test run uitest
 --build-dir [pathToUITestBuildDir] (Yes, this is really the UI test project build directory. When built with the solution, it's in the APPCENTER_SOURCE_DIRECTORY. Use globbing (*), so updating the package version won't break this script.)  
 --uitest-tools-dir [where to find test-cloud.exe] (see /packages/Xamarin.UITest.2.2.1/tools in APPCENTER_SOURCE_DIRECTORY)  
 --token [The name of the App Center build environment variable that contains your App Center API token generated in step 1.1 above]  
+```
