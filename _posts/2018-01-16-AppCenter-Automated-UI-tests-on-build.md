@@ -12,7 +12,7 @@ It's surprising how quickly I've already taken them for granted. I push code, th
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/CIBuilds.png" style="width: 700px;"/> 
 
 Apart from the builds, I think the next most important feature of a good DevOps pipeline is automated testing. We all write unit tests (right???!), which I think is really valuable, but even on my small apps, there are functional areas that I rarely test anymore - now that development of that feature is done.  
-For example, one of my apps, Pickster, features a ListView of names where you can swipe on any name and be presented with a context action to delete the name. I realized the other day that I haven't personally tested that functionality for probably 6 months or so. It's just not part of my regular use. I add names a lot as I'm developing and testing, but hardly ever delete one or use those context actions. This app doesn't even really do a lot, but has areas that rarely get manual testing love. Think of big apps. Humans just aren't good at testing everything, or testing it the same every time.  
+For example, one of my apps, Pickster, features a ListView of names where you can swipe on any name and be presented with a context action to delete the name. I realized the other day that I haven't personally tested that functionality for probably 6 months or so. It's just not part of my regular use. I add names a lot as I'm developing and testing, but hardly ever delete one or use those context actions. This app doesn't even really do a lot, but has areas that rarely get manual testing love. Think of big apps. Humans just aren't good at testing everything, or testing it the same way every time.  
 
 Enter automated UI tests.  
 
