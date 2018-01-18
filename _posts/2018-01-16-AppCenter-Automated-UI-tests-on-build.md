@@ -107,7 +107,7 @@ Last two easy ones. They're both generated for you. The first is the name of the
 ```
 The generated command simply suggests "pathToUITestBuildDir" for this parameter value. Yes, make no mistake, this is really the UI test project build directory. Your Xamarin UI Test project MUST be built as part of your App Center build, so that meant for me, I had to build the app solution - not simply the iOS project like other builds. When built, the output goes into the $APPCENTER_SOURCE_DIRECTORY, specifically in the /bin/Debug folder.  
 
-12 of 34 builds spent on this.  Part of what made this so tricky is that I was missing a compiler symbol in the properties of my iOS project. I had only ran the UI Tests on a simulator, so I had to add this compiler symbol to my Debug - iPhone configuration.  
+12 of 34 builds spent on this.  Part of what made this so tricky is that I was missing a compiler symbol in the properties of my iOS project. So far, I had only run the UI Tests on a simulator, so I had to add this compiler symbol to my Debug - iPhone configuration.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/compilerSymbols.png" style="width: 800px;"/> 
 
 For reference, I'm using the ENABLE_TEST_CLOUD symbol in my AppDelegate to start up Calabash.  Could also use DEBUG, probably.  
