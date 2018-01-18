@@ -132,7 +132,7 @@ This is where you put the name of the App Center build environment variable that
 
 # Final Script Details
 
-The post-build script needs to be named exactly "appcenter-post-build.sh", and put in your source repo in the same folder your solution (.sln) file lives in, since my App Center build builds my app solution file.  You'll know it's in the right spot when you see this in your build configuration settings:  
+The post-build script needs to be named exactly "appcenter-post-build.sh", and checked into your source repo in the same folder your solution (.sln) file lives in, since my App Center build builds my app solution file.  You'll know it's in the right spot when you see this in your build configuration settings:  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/postBuildScript.png" style="width: 550px;"/>  
 
 Here's more info on the [3 types of App Center build scripts](https://docs.microsoft.com/en-us/appcenter/build/custom/scripts/) you can write.
