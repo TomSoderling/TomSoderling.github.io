@@ -23,6 +23,7 @@ More info on how to get started writing and running Xamarin UI tests [here](http
 
 Okay, so you've got some UI tests written and running locally on simulator or device - great. Now we want to run them in Xamarin Test Cloud on that huge collection of real mobile devices they've got. 3017 last I heard.  The following directions are for an iOS build, but should be similar for Android too.  
 
+
 # Let's Do It
 
 Here are the 5 pieces you need to integrate UI tests that run in Xamarin Test Cloud into your App Center builds:  
@@ -32,8 +33,13 @@ Here are the 5 pieces you need to integrate UI tests that run in Xamarin Test Cl
 
 ## Pieces #1 & #2
 
+You have to be authenticated with App Center in order to run the "appcenter test run uitest" command.  
+Follow [steps 1-5 here](https://docs.microsoft.com/en-us/appcenter/api-docs/) to generate an App Center API token.  
+Using the build configuration settings, create a new build environment variable named "appCenterLoginApiToken" or something. For its value, paste in the token you just generated.  This env. variable can now be used in our post-build script.  
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/postBuildScript.png" style="width: 1000px;"/>  
 
-## Pieces #4, #3, & part of #5
+
+## Pieces #4, #3, and part of #5
 
 Go to the Test beacon in App Center  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testBeacon.png" style="width: 200px;"/>  
@@ -45,11 +51,12 @@ Next, create a new test run by clicking on the New Test Run button. It guides yo
 
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 900px;"/>  
 
-This really only gets you part of the way there though. After I copied that generated command, it took me exactly **34** builds before I had the UI tests working at all as part of my CI build. **Thirty**. **Four**. And that was with the help of App Center support. (Which is pretty great. They have a nice on-page chat window that you can paste screnshots into, and responses were usually quick).  So hopefully this blog post will save you a bit of time.    
+This really only gets you part of the way there though. After I copied that generated command, it took me exactly **34** builds before I had the UI tests working at all as part of my CI build. **Thirty.** **Four.** And that was _with_ the help of App Center support. (Which is pretty great. They have a nice on-page chat window that you can paste screnshots into, and responses were usually quick).  So hopefully this blog post will save you a bit of time.    
 
 For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly **L-A-M-E**. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
 Good news - that command can be run as part of any Debug build pipeline by writing a tiny post-build bash script. It really only needs to contain that one line, and with the help of a guy that failed **34** times at it, you have nothing to worry about.  (Note: for iOS, Xamarin UI tests can only be run on Debug builds.)
+
 
 ## Piece #5
 
@@ -120,14 +127,58 @@ Notice that I'm using globbing (* character) in place of the version number port
 ```bash
 --token $appCenterLoginApiToken
 ```
-You have to be authenticated with App Center in order to run the "appcenter test run uitest" command. This is where you put the name of the App Center build environment variable that contains your App Center API token generated in step 1 and 2 above.  It's best to use an env. variable so you don't have to check in a sensitive API key into source control.  
-9 of 34 builds spent on this. This is the best kept secret of App Center. I didn't know this parameter even existed for a long time, and haven't seen any documentation that even mentions it.  
+This is where you put the name of the App Center build environment variable that contains your App Center API token that you generated (piece 1 and 2).  It's best to use an env. variable so you don't have to check in a sensitive API key into source control.  
+9 of 34 builds spent on this. This is the **best kept secret** of App Center. I didn't know this parameter even existed for a long time, and haven't seen any documentation that even mentions it.  
 
 
 # Final Script Details
 
-The post-build script needs to be named exactly "appcenter-post-build.sh", and put in your source repo in the same folder your solution (.sln) file lives in.  Here's more info on the [3 types of App Center build scripts](https://docs.microsoft.com/en-us/appcenter/build/custom/scripts/) you can write.
+The post-build script needs to be named exactly "appcenter-post-build.sh", and put in your source repo in the same folder your solution (.sln) file lives in, since my App Center build builds my app solution file.  You'll know it's in the right spot when you see this in your build configuration settings:  
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/postBuildScript.png" style="width: 400px;"/>  
+
+Here's more info on the [3 types of App Center build scripts](https://docs.microsoft.com/en-us/appcenter/build/custom/scripts/) you can write.
+
 
 
 # My Script File
 
+```bash
+#!/usr/bin/env bash
+
+# Post Build Script
+
+set -e # Exit immediately if a command exits with a non-zero status (failure)
+
+echo "**************************************************************************************************"
+echo "Post Build Script"
+echo "**************************************************************************************************"
+
+##################################################
+# Start UI Tests
+##################################################
+
+# variables
+appCenterLoginApiToken=$AppCenterLoginForAutomatedUITests # this comes from the build environment variables
+appName="tomso/Pickster"
+deviceSetName="tomso/top-devices"
+testSeriesName="all-tests"
+
+echo ""
+echo "Start Xamarin.UITest run"
+echo "   App Name: $appName"
+echo " Device Set: $deviceSetName"
+echo "Test Series: $testSeriesName"
+echo ""
+
+echo "> Run UI test command"
+# Note: must put a space after each parameter/value pair
+appcenter test run uitest --app $appName --devices $deviceSetName --app-path $APPCENTER_OUTPUT_DIRECTORY/Pickster.ipa --test-series $testSeriesName --locale "en_US" --build-dir $APPCENTER_SOURCE_DIRECTORY/Pickster.UITests/bin/Debug --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools --token $appCenterLoginApiToken 
+
+echo ""
+echo "**************************************************************************************************"
+echo "Post Build Script complete"
+echo "**************************************************************************************************"
+```
+
+
+Enjoy sitting back sipping lemonade while the machines do your bidding. Please hit me up on twitter if you have questions or feedback!
