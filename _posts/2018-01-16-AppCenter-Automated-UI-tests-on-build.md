@@ -23,7 +23,7 @@ Okay, so you've got some UI tests written and running locally on simulator or de
 
 Start by going to the Test beacon in App Center and click on the grey Test Series button. With CI builds, you have the option to launch the app on a test device at the end of a build. That's a test series named launch-tests.  You'll want to create and name a new one. Say "smoke-tests" or something.  
 Next, create a new test run by clicking on the New Test Run button. It guides you through picking your devices, the framework the test are written in (Xamarin.UITest for me), and generates the command to run the tests in App Center, filling in some of the info for you.  
-<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 500px;"/> 
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 800px;"/>  
 This really only gets you part of the way there though. It took me exactly **34** builds after I generated that command until I had the automated UI tests working as part of my CI build. Thirty. Four. And that was with the help of App Center support towards the end. (Which is really great. They have a nice on-page chat window, and responses were usually really quick). Hence this blog post.  
 
 For whatever reason, the directions from in App Center state to run the command on your LOCAL machine to run the tests in App Center. Well that is incredibly L-A-M-E. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
