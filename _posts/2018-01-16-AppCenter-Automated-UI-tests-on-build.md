@@ -99,7 +99,7 @@ The generated command simply suggests "pathToUITestBuildDir" for this parameter 
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/compilerSymbols.png" style="width: 800px;"/> 
 
 For reference, I'm using the ENABLE_TEST_CLOUD symbol in my AppDelegate to start up Calabash.  Could also use DEBUG, probably.  
-<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/appDelegateCode.png" style="width: 800px;"/> 
+<img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/appDelegateCode.png" style="width: 600px;"/> 
 
 
 ```bash
