@@ -19,7 +19,7 @@ Enter automated UI tests.
 I really like to use the [Xamarin UI Test Recorder](https://developer.xamarin.com/guides/testcloud/testrecorder/) to get the inital scaffolding of a UI test built and then tweak it from there. Using the recorder, you simply tap/type/swipe around the app and use it like you normally would, and the test recorder translates that into Xamarin.UITest commands that make up your automated UI test.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/testrecorder.png" style="width: 1000px;"/>  
 
-More info on how to get started writing and running Xamarin UI tests [here](https://developer.xamarin.com/guides/testcloud/uitest/)  
+More info on how to get started writing and running Xamarin UI tests [can be found here](https://developer.xamarin.com/guides/testcloud/uitest/)  
 
 Okay, so you've got some UI tests written and running locally on simulator or device - great. Now we want to run them in Xamarin Test Cloud on that huge collection of real mobile devices they've got. 3017 last I heard.  The following directions are for an iOS build, but should be similar for Android too.  
 
