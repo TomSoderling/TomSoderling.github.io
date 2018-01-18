@@ -105,7 +105,9 @@ For reference, I'm using the ENABLE_TEST_CLOUD symbol in my AppDelegate to start
 ```bash
 --uitest-tools-dir $APPCENTER_SOURCE_DIRECTORY/packages/Xamarin.UITest.*/tools
 ```
-This is the folder where test-cloud.exe lives.  You'll find this in: /packages/Xamarin.UITest.[whatever version number]/tools in $APPCENTER_SOURCE_DIRECTORY. Notice that I'm using globbing (* character) in place of the version number portion (2.2.1 for example), so that when you update this NuGet package to a new version number it won't break your script.  
+This is the folder where test-cloud.exe lives.  You'll find this in: /packages/Xamarin.UITest.[whatever version number]/tools in $APPCENTER_SOURCE_DIRECTORY.  
+
+Notice that I'm using globbing (* character) in place of the version number portion (2.2.1 for example), so that when you update this NuGet package to a new version number it won't break your script.  
 7 of 34 builds spent on this.
 
 ```bash
