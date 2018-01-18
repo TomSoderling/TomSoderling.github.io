@@ -54,7 +54,7 @@ This really only gets you part of the way there though. After I copied that gene
 
 For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly **L-A-M-E**. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
-Good news - that command can be run as part of any Debug build pipeline by writing a tiny post-build bash script. It really only needs to contain that one line, and with the help of a guy that failed **34** times at it, you have nothing to worry about.  (Note: for iOS, Xamarin UI tests can only be run on Debug builds.)
+Good news - that command can be run as part of any Debug build pipeline by writing a tiny post-build bash script. It really only needs to contain that one line, and with the help of a guy that failed **33** times at it, you have nothing to worry about.  (Note: for iOS, Xamarin UI tests can only be run on Debug builds.)
 
 
 ## Piece #5
