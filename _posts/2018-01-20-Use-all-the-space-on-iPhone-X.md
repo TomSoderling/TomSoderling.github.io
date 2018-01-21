@@ -60,7 +60,7 @@ I've found an easy way to make your launch image/icon be centered on all device 
 
  2. Click the Center and Middle buttons next to "Position in Parent"  
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering2.png" style="width: 300px;"/>  
- this will center the image in the middle of your current device view.  
+ This will center the image in the middle of your current device view.  
 
  3. Click on these red line segments to remove them  
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering3.png" style="width: 300px;"/>  
