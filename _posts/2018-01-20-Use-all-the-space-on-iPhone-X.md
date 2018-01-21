@@ -55,11 +55,15 @@ My launch screens are pretty simple. It's just my app icon on a solid colored ba
 
 
 I've found an easy way to make your launch image/icon be centered on all device sizes without messing with constraints. Follow these steps:
- 1. With your Image View selected. <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering1.png" style="width: 300px;"/>  
+ 1. With your Image View selected.  
+ <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering1.png" style="width: 200px;"/>  
+
  2. Click the Center and Middle buttons next to "Position in Parent" <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering2.png" style="width: 300px;"/>  
- this will center the image in the middle of your current device view.
+ this will center the image in the middle of your current device view.  
+
  3. Click on these red line segments to remove them <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering3.png" style="width: 300px;"/>  
- Now your image will stay centered on all device sizes
+ Now your image will stay centered on all device sizes  
+ 
  4. If you image is of high enough resolution, you can also click on the dashed arrows inside the box to all it to be autosized for larger/smaller screen sizes.  
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering4.png" style="width: 300px;"/>  
 
