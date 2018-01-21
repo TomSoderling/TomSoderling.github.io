@@ -24,10 +24,10 @@ tags: [Xamarin, Xamarin.Forms, iOS]
     </div>
     <div style="display: inline-block; width: 65%; vertical-align: top;">This app is sad.  It doesn't know to use all those extra beautiful iPhone X pixels. <br/> <br/>  
     
-    Turns out, if you want your app to expand into that new space above and below, you <b>must</b> create a Launch Screen Storyboard.  For those that are more familiar with Xamarin.Forms apps, this may be foreign, but don't worry. <br/> <br/> 
+    Most of us are familiar with this screen, where we can specify a Launch Screen image for each device size, type (iPhone, iPad, Apple TV), and screen resolution, like Retina HD 5.5 (iPhone Plus) and Retina HD 4.7 (iPhone 6 and up) <br/>
+    <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/launchImages.png" style="width: 300px;"/> <br/> <br/>
 
-    Most of us are familiar with this screen, where we can specify a Launch Screen image for each device size, type (iPhone, iPad, Apple TV), and screen resolution. <br/>
-    <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/launchImages.png" style="width: 300px;"/>
+    Turns out, there is no option for the new iPhone X here - something like a Retina HD 5.8.  If you want your app to expand into that new space above and below, you <b>must</b> create a Launch Screen Storyboard.  For those that are more familiar with Xamarin.Forms apps, this may be foreign, but don't worry. <br/>
     </div>
 </div>
 
