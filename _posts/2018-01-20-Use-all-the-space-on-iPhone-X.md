@@ -41,15 +41,28 @@ In the dialog, choose > **iOS** (on the left panel) > **Launch Screen**.  The de
 
 <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/newLaunchScreen.png" style="width: 600px;"/>  
 
-From here, I'd suggest [following this guide from Xamarin](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard), on how to design the storyboard and set the constraints so the launch image/icon will be positioned how you want on all device sizes.
+From here, I'd suggest [following steps 2 - 8 in this guide from Xamarin](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard), on how to design the storyboard and place a launch image/icon.  Then come back here when they start to talk about constraints.
 
-
-## Couple tips to help:
-
- - When the directions say "Add constraints to the Image View", that means drag the little handles around while in Constraint Editing Mode. That will create the constraints and you'll be able to set the properties of them in the Properties box > Layout tab.
-
+One tip:
 - If for some reason your app _already_ has a storyboard in it, it's probably being used at the Launch Screen already.  After you create the new LaunchScreen storyboard, you may not see "LaunchScreen" appear in the Launch Screen dropdown box when editing your Info.plist file. Quit Visual Studio for Mac and relaunch it and open your solution again. It should now appear.  
 <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/dropdown.png" style="width: 500px;"/>  
+
+
+## Centering Launch Images
+
+Okay so, you've got a basic launch screen storyboard created now.  
+My launch screens are pretty simple. It's just my app icon on a solid colored background. 
+
+
+I've found an easy way to make your launch image/icon be centered on all device sizes without messing with constraints. Follow these steps:
+ 1. With your Image View selected. <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering1.png" style="width: 300px;"/>  
+ 2. Click the Center and Middle buttons next to "Position in Parent" <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering2.png" style="width: 300px;"/>  
+ this will center the image in the middle of your current device view.
+ 3. Click on these red line segments to remove them <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering3.png" style="width: 300px;"/>  
+ Now your image will stay centered on all device sizes
+ 4. If you image is of high enough resolution, you can also click on the dashed arrows inside the box to all it to be autosized for larger/smaller screen sizes.  
+ <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering4.png" style="width: 300px;"/>  
+
 
 
 # The Results
