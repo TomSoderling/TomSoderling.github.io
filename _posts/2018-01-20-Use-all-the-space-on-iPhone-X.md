@@ -26,10 +26,11 @@ tags: [Xamarin, Xamarin.Forms, iOS]
     
     Turns out, if you want your app to expand into that new space above and below, you <b>must</b> create a Launch Screen Storyboard.  For those that are more familiar with Xamarin.Forms apps, this may be foreign, but don't worry. <br/> <br/> 
 
-    Most of us are familiar with this screen, where we specify a Launch Screen image for each device size, type (iPhone, iPad, Apple TV), and screen resolution. <br/>
+    Most of us are familiar with this screen, where we can specify a Launch Screen image for each device size, type (iPhone, iPad, Apple TV), and screen resolution. <br/>
     <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/launchImages.png" style="width: 300px;"/>
     </div>
 </div>
 
-As of iOS 8, we've been able to make a single Unified Storyboard to create a Launch Screen that looks correct in all cases. I've just never done it until needing to support iPhone X.
+As of iOS 8, we're now able to use a single Unified Storyboard to make a Launch Screen that looks correct in all cases. I've just never done it until needing to support iPhone X.
 
+[Great guide from Xamarin on how to do this](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard)
