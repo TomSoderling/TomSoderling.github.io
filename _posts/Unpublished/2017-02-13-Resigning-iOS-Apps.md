@@ -54,7 +54,7 @@ var height = 200;
 Yes. Sorry. And it certainly is being done. A lot of apps that hit the iOS App Store are immediately ripped off by people that resign and resubmit them as their own. So expect that it will happen and plan for it.  
 
  - These days, most business or enterprise apps are pretty useless without access to the backend server, so being able to control that access is key.
- - Obfuscate code you don't want decompiled or messed with.  I've heard good things about [Babel](http://babelfor.net). It's a 3rd of the price of the popular Dotfuscator
+ - Obfuscate code you don't want decompiled or messed with.  I've heard good things about [Babel](http://babelfor.net). It's a 3rd of the price of the popular Dotfuscator and can obfuscate public methods - something others can't do.
  - [WHAT ELSE CAN BE DONE? Link?]
 
 # Resources

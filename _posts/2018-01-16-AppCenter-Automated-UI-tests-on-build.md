@@ -7,7 +7,7 @@ author: tom
 comments: true
 tags: [Visual Studio App Center, Xamarin, Xamarin.UITest, UI Test, iOS]
 ---
-Visual Studio App Center continues to amaze and impress me. Over Christmast break, I set up CI (Continuous Integration) and Release/App Store builds for all my little app projects - which was truely a delightful experience - and they've been humming along smoothly. 
+Visual Studio App Center continues to amaze and impress me. Over Christmas break, I set up CI (Continuous Integration) and Release/App Store builds for all my little app projects - which was truly a delightful experience - and they've been humming along smoothly. 
 It's surprising how quickly I've already taken them for granted. I push code, they build, run the automated launch test on a real device, I get a nice email to install the build on test devices, and can push it to the app stores if it makes the cut. So nice. It's hard to imagine I used to do it any other way.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/CIBuilds.png" style="width: 700px;"/> 
 
@@ -50,7 +50,7 @@ Next, create a new test run by clicking on the New Test Run button. It guides yo
 
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/generatedCommand.png" style="width: 900px;"/>  
 
-This really only gets you part of the way there though. After I copied that generated command, it took me exactly **34** builds before I had the UI tests working at all as part of my CI build. **Thirty.** **Four.** And that was _with_ the help of App Center support. (Which is pretty great. They have a nice on-page chat window that you can paste screnshots into, and responses were usually quick).  So hopefully this blog post will save you a bit of time.    
+This really only gets you part of the way there though. After I copied that generated command, it took me exactly **34** builds before I had the UI tests working at all as part of my CI build. **Thirty.** **Four.** And that was _with_ the help of App Center support. (Which is pretty great. They have a nice on-page chat window that you can paste screenshots into, and responses were usually quick).  So hopefully this blog post will save you a bit of time.    
 
 For whatever reason, the directions from in App Center state to run the command in terminal on your LOCAL machine to run the tests in App Center. Well that is incredibly **L-A-M-E**. We don't want to do stuff. We want the machines to do the stuff for us. Ya know, automation?  
 
