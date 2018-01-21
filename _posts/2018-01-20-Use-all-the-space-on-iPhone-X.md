@@ -33,4 +33,11 @@ tags: [Xamarin, Xamarin.Forms, iOS]
 
 As of iOS 8, we're now able to use a single Unified Storyboard to make a Launch Screen that looks correct in all cases. I've just never done it until needing to support iPhone X.
 
-[Great guide from Xamarin on how to do this](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard)
+# Let's Do It
+
+Start by right-clicking on your project in Visual Studio and select Add > New File  
+In the dialog, choose > iOS (on the left panel) > Launch Screen  
+<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace.png" style="width: 300px;"/>  
+newLaunchScreen
+
+[Guide from Xamarin on how to do this](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard)
