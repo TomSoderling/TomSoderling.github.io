@@ -20,7 +20,7 @@ tags: [Xamarin, Xamarin.Forms, iOS]
 
 <div>
     <div style="display: inline-block;" align="top">
-        <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace.png" style="width: 300px;"/>  
+    <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace.png" style="width: 300px;"/>  
     </div>
     <div style="display: inline-block; width: 65%; vertical-align: top;">This app is sad.  It doesn't know to use all those extra beautiful iPhone X pixels. <br/> <br/>  
     
@@ -31,15 +31,18 @@ tags: [Xamarin, Xamarin.Forms, iOS]
     </div>
 </div>
 
-As of iOS 8, we're now able to use a single Unified Storyboard to make a Launch Screen that looks correct in all cases. I've just never done it until needing to support iPhone X.
+As of iOS 8, we're now able to use a single Unified Storyboard to make a Launch Screen that looks correct in all cases. I've just never done it until needing to support iPhone X.  
+
 
 # Let's Do It
 
 Start by right-clicking on your project in Visual Studio and select **Add** > **New File**  
 In the dialog, choose > **iOS** (on the left panel) > **Launch Screen**.  The default name "LaunchScreen" is just fine, but can be named anything.   
+
 <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/newLaunchScreen.png" style="width: 600px;"/>  
 
+From here, I'd suggest [following this guide from Xamarin](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard), on how to design the storyboard and set the constraints for appearance on all devices. 
 
+One additional note:  If for some reason your app _already_ has a storyboard in it, it's probably being used at the Launch Screen already.  After you create the new LaunchScreen storyboard, you may not see it in the Launch Screen dropdown in your Info.plist file. Quite Visual Studio for Mac and relaunch it and open your solution again. It should now appear.  
 
-
-[Guide from Xamarin on how to do this](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard)
+<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/dropdown.png" style="width: 500px;"/>  
