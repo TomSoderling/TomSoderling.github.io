@@ -12,7 +12,7 @@ tags: [Xamarin, Xamarin.Forms, iOS]
     With that nice screen comes some extra space on top and on bottom. Space that all my old apps don't understand how to take advantage of. I've found myself struggling to remember each time how exactly to make use of that space, so here are the steps.
     </div>
     <div style="display: inline-block;" align="top">
-        <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/iphone-x.png" width="200" />  
+        <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/iphone-x.png" width="175" />  
     </div>
 </div>
 
