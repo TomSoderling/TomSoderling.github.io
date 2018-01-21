@@ -17,8 +17,8 @@ tags: [Xamarin, Xamarin.Forms, iOS]
     </div>
 </div>
 
-
-<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/iphone-x.png" style="width: 100px;"/>  
+This app is sad - it doesn't know to use all those extra beautiful iPhone X pixels.
+<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace" style="width: 300px;"/>  
 
 
 
