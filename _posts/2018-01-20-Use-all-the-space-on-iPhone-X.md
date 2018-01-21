@@ -17,10 +17,14 @@ tags: [Xamarin, Xamarin.Forms, iOS]
     </div>
 </div>
 
-This app is sad - it doesn't know to use all those extra beautiful iPhone X pixels.
-<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace.png" style="width: 300px;"/>  
 
-
+<div>
+    <div style="display: inline-block;" align="top">
+        <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace.png" style="width: 300px;"/>  
+    </div>
+    <div style="display: inline-block; width: 70%; vertical-align: top;">This app is sad - it doesn't know to use all those extra beautiful iPhone X pixels.  
+  </div>
+</div>
 
 
 Point out that you MUST use a storyboard now
