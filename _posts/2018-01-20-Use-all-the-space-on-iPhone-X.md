@@ -37,7 +37,7 @@ As of iOS 8, we're now able to use a single Unified Storyboard to make a Launch 
 
 Start by right-clicking on your project in Visual Studio and select Add > New File  
 In the dialog, choose > iOS (on the left panel) > Launch Screen.  The default name "LaunchScreen" is just fine, but can be named anything.   
-<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/newLaunchScreen.png" style="width: 400px;"/>  
+<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/newLaunchScreen.png" style="width: 600px;"/>  
 
 
 
