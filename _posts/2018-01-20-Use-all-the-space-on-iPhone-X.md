@@ -41,7 +41,7 @@ In the dialog, choose > **iOS** (on the left panel) > **Launch Screen**.  The de
 
 <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/newLaunchScreen.png" style="width: 600px;"/>  
 
-From here, I'd suggest [following this guide from Xamarin](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard), on how to design the storyboard and set the constraints for appearance on all devices. 
+From here, I'd suggest [following this guide from Xamarin](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard), on how to design the storyboard and set the constraints so the launch image/icon will be positioned how you want on all device sizes.
 
 One additional note:  If for some reason your app _already_ has a storyboard in it, it's probably being used at the Launch Screen already.  After you create the new LaunchScreen storyboard, you may not see "LaunchScreen" appear in the Launch Screen dropdown box when editing your Info.plist file. Quit Visual Studio for Mac and relaunch it and open your solution again. It should now appear.  
 
