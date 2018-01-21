@@ -44,7 +44,7 @@ In the dialog, choose > **iOS** (on the left panel) > **Launch Screen**.  The de
 From here, I'd suggest [following steps 2 - 8 in this guide from Xamarin](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard), on how to design the storyboard and place a launch image/icon.  Then come back here when they start to talk about constraints.
 
 One tip:
-- If for some reason your app _already_ has a storyboard in it, it's probably being used at the Launch Screen already.  After you create the new LaunchScreen storyboard, you may not see "LaunchScreen" appear in the Launch Screen dropdown box when editing your Info.plist file. Quit Visual Studio for Mac and relaunch it and open your solution again. It should now appear.  
+- If for some reason your app _already_ has a storyboard in it, after creating the new LaunchScreen storyboard, you may not see "LaunchScreen" appear in the Launch Screen dropdown box when editing your Info.plist file. Quit Visual Studio for Mac and relaunch it and open your solution again. It should now appear.  
 <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/dropdown.png" style="width: 500px;"/>  
 
 
@@ -56,7 +56,7 @@ My launch screens are pretty simple. It's just my app icon on a solid colored ba
 
 I've found an easy way to make your launch image/icon be centered on all device sizes without messing with constraints. Follow these steps:
  1. With your Image View selected.  
- <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering1.png" style="width: 150px;"/>  
+ <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering1.png" style="width: 125px;"/>  
 
  2. Click the Center and Middle buttons next to "Position in Parent"  
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering2.png" style="width: 300px;"/>  
@@ -75,3 +75,10 @@ I've found an easy way to make your launch image/icon be centered on all device 
 
 Ah, that's much better! Look at all those good looking pixels being put to use!  
 <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/finalProduct.png" style="width: 300px;"/>  
+
+
+# Mind the iPhone X Safe Areas
+
+The iPhone X is unique in that it features an all new on-screen home indicator bar in place of the physical home button, the "notch" sensor housing, and rounded screen corners.  You'll want to check that your layouts "safe" and make sure that content isn’t being clipped by any of these device-specific features.
+
+See these Xamarin blog posts for [Xamarin.Forms apps](https://blog.xamarin.com/making-ios-11-even-easier-xamarin-forms/) and [iOS apps](https://blog.xamarin.com/updating-xamarin-ios-apps-for-the-iphone-x/)
