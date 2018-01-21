@@ -43,6 +43,16 @@ In the dialog, choose > **iOS** (on the left panel) > **Launch Screen**.  The de
 
 From here, I'd suggest [following this guide from Xamarin](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#storyboard), on how to design the storyboard and set the constraints so the launch image/icon will be positioned how you want on all device sizes.
 
-One additional note:  If for some reason your app _already_ has a storyboard in it, it's probably being used at the Launch Screen already.  After you create the new LaunchScreen storyboard, you may not see "LaunchScreen" appear in the Launch Screen dropdown box when editing your Info.plist file. Quit Visual Studio for Mac and relaunch it and open your solution again. It should now appear.  
 
+## Couple tips to help:
+
+ - When the directions say "Add constraints to the Image View", that means drag the little handles around while in Constraint Editing Mode. That will create the constraints and you'll be able to set the properties of them in the Properties box > Layout tab.
+
+- If for some reason your app _already_ has a storyboard in it, it's probably being used at the Launch Screen already.  After you create the new LaunchScreen storyboard, you may not see "LaunchScreen" appear in the Launch Screen dropdown box when editing your Info.plist file. Quit Visual Studio for Mac and relaunch it and open your solution again. It should now appear.  
 <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/dropdown.png" style="width: 500px;"/>  
+
+
+# The Results
+
+Ah, that's much better! Look at all those good looking pixels being put to use!  
+<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/finalProduct.png" style="width: 300px;"/>  
