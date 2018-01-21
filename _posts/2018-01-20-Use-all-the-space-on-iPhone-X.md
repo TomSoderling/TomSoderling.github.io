@@ -18,8 +18,7 @@ tags: [Xamarin, Xamarin.Forms, iOS]
 </div>
 
 This app is sad - it doesn't know to use all those extra beautiful iPhone X pixels.
-<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace" style="width: 300px;"/>  
-
+<img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace.png" style="width: 300px;"/>  
 
 
 
