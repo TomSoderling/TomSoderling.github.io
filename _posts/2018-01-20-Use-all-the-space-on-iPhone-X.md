@@ -23,7 +23,7 @@ tags: [Xamarin, Xamarin.Forms, iOS]
         <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/unusedSpace.png" style="width: 300px;"/>  
     </div>
     <div style="display: inline-block; width: 65%; vertical-align: top;">This app is sad.  It doesn't know to use all those extra beautiful iPhone X pixels. <br/> <br/>  
-    Turns out, if you want your app to expand into that new space above and below, you **must** create a Launch Screen Storyboard.  For those that are more familiar with Xamarin.Forms apps, this may be foreign, but don't worry. <br/> 
+    Turns out, if you want your app to expand into that new space above and below, you <b>must</b> create a Launch Screen Storyboard.  For those that are more familiar with Xamarin.Forms apps, this may be foreign, but don't worry. <br/> 
 
     </div>
 </div>
