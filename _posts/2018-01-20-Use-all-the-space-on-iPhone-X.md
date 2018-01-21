@@ -29,9 +29,9 @@ tags: [Xamarin, Xamarin.Forms, iOS]
     </div>
 </div>
 
-We'd expect it to be a spot for the new iPhone X, named something like a "Super Retina HD 5.8", but there isn't an option for iPhone X here.  If you want your app to expand into that new space above and below, you **must** create a Launch Screen Storyboard.  For those that are more familiar with Xamarin.Forms apps, this may be foreign, but don't worry.  
+We'd expect it have a spot for the new iPhone X, named something like "Super Retina HD 5.8", but there isn't an option for iPhone X here.  If you want your app to expand into that new space above and below, you **must** create a Launch Screen Storyboard.  For those that are more familiar with Xamarin.Forms apps, this may be foreign, but don't worry.  
 
-As of iOS 8, we're now able to use a single Unified Storyboard to make a Launch Screen that looks correct in all cases. I've just never done it until needing to support iPhone X.  
+As of iOS 8, we're now able to use a single Unified Storyboard to make a Launch Screen that looks correct in all cases. I've just never done it until needing to support iPhone X. 
 
 
 # Let's Do It
