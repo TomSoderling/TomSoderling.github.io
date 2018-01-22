@@ -116,7 +116,7 @@ One line in an unrelated library's FAQ section about license keys:
 
 AH!  That makes so much sense!
 
-Now there have been a few UWP-specific Xamarin.Forms ~~obstacles of negligence~~ _intricacies_ like this (I'll post more of them later), that haven't been communicated well by Xamarin.  Some aren't documented at all, and some are, but as an after-thought, like this one.  There is a special, nearly secret, overload of the Forms.Init method just for UWP in which you can pass in an IEnumerable called rendererAssemblies:
+Now there have been a few UWP-specific Xamarin.Forms _intricacies_ like this that I think could be documented better. Turns out, there is a special, nearly secret, overload of the Forms.Init method just for UWP where you can pass in an IEnumerable called rendererAssemblies:
 
 ```csharp
 #if WINDOWS_UWP
@@ -175,7 +175,7 @@ NControl.UWP.NControlViewRenderer.Init();
 Without the above code, you get nothing in UWP with .NET Native builds.  No exceptions are thrown.  Nothing in the debug output window.  Nothing on screen.  Silent failure.
 
 
-**I feel that this should be documented much better.**  Hence this blog post.
+**I feel that this should be documented much better.**  Hence this blog post (and I've reached out to the Xamarin docs team).
 
 
 If you are interested in using NControl or NGraphics on UWP, check out the pull requests [here](https://github.com/praeclarum/NGraphics/pull/63) and [here](https://github.com/chrfalch/NControl/pull/71).  
