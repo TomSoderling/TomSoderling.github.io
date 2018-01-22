@@ -79,6 +79,6 @@ Ah, that's much better! Look at all those good looking pixels being put to use!
 
 # Mind the iPhone X Safe Areas
 
-The iPhone X is unique in that it features an all new on-screen home indicator bar in place of the physical home button, the "notch" sensor housing, and rounded screen corners.  You'll want to check that your layouts "safe" and make sure that content isn’t being clipped by any of these device-specific features.
+The iPhone X is unique in that it features an all new on-screen home indicator bar in place of the physical home button, the "notch" sensor housing, and rounded screen corners.  You'll probably want to check that your layouts are "safe" and make sure that content isn’t being clipped by any of these device-specific features.
 
 See these Xamarin blog posts for [Xamarin.Forms apps](https://blog.xamarin.com/making-ios-11-even-easier-xamarin-forms/) and [iOS apps](https://blog.xamarin.com/updating-xamarin-ios-apps-for-the-iphone-x/)
