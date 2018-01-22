@@ -66,7 +66,7 @@ I've found an easy way to make your launch image/icon be centered on all device 
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering3.png" style="width: 300px;"/>  
  Now your image will stay centered on all device sizes  
 
- 4. If you image is of high enough resolution, you can also click on the dashed arrows inside the box to all it to be autosized for larger/smaller screen sizes.  
+ 4. If you image is of high enough resolution, you can also click on the dashed arrows inside the box to allow it to be autosized on larger/smaller screen sizes.  
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering4.png" style="width: 300px;"/>  
 
 
