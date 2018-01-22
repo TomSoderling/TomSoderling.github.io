@@ -124,8 +124,6 @@ Now there have been a few UWP-specific Xamarin.Forms _intricacies_ like this tha
 #else
 ```
 
-(BTW, you can check it out for yourself in the [offical Xamarin.Forms repo here)](https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Platform.WinRT.Tablet/Forms.cs#L28)
-
 And what does it do with these assemblies?
 
 ```csharp
