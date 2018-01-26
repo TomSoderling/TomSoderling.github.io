@@ -127,7 +127,7 @@ Notice that I'm using globbing (* character) in place of the version number port
 --token $appCenterLoginApiToken
 ```
 This is where you put the name of the App Center build environment variable that contains your App Center API token that you generated (piece 1 and 2).  It's best to use an env. variable so you don't have to check in a sensitive API key into source control.  
-9 of 34 builds spent on this. This is the **best kept secret** of App Center. I didn't know this parameter even existed for a long time, and haven't seen any documentation that even mentions it.  
+9 of 34 builds spent on this. This is the **best kept secret** of App Center. I didn't know this parameter even existed for a long time, and haven't seen any documentation that mentions it (yet).  
 
 
 # Final Script Details
