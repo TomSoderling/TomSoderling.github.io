@@ -81,4 +81,6 @@ Ah, that's much better! Look at all those good looking pixels being put to use!
 
 The iPhone X is unique in that it features an all new on-screen home indicator bar in place of the physical home button, the "notch" sensor housing, and rounded screen corners.  You'll probably want to check that your layouts are "safe" and make sure that content isn’t being clipped by any of these device-specific features.
 
+See [this great post about it](https://blogs.msdn.microsoft.com/vsappcenter/deliver-better-iphone-x-ux-with-visual-studio-app-center) on the VS App Center blog  
+
 See these Xamarin blog posts for [Xamarin.Forms apps](https://blog.xamarin.com/making-ios-11-even-easier-xamarin-forms/) and [iOS apps](https://blog.xamarin.com/updating-xamarin-ios-apps-for-the-iphone-x/)
