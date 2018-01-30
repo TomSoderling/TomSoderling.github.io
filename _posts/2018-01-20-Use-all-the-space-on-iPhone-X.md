@@ -9,7 +9,7 @@ tags: [Xamarin, Xamarin.Forms, iOS]
 ---
 <div>
     <div style="display: inline-block; width: 80%; vertical-align: top;">The iPhone X has been out since early November (2017) and it is easily the best phone I've ever used. <br/>
-    Great size, glass on glass on stainless steel design, wireless charging using Qi standard, fantastic gesture-based navigation, IP67 water resistant, convenient face ID, and the best camera I've ever owned. But topping the list is the screen; gorgeous, highly color accurate OLED that makes you think you're touching the very pixels. <br/> 
+    Great size, glass on glass on stainless steel design, wireless charging using Qi standard, fantastic gesture-based navigation, IP67 water resistant, convenient face ID, and the best camera I've ever owned. But topping the list is the screen; gorgeous, highly color accurate OLED that makes you think you're touching the very pixels. <br/> <br/> 
     With that nice screen comes some extra space. Space that all my old apps don't understand how to make use of. I've found myself struggling to remember each time how exactly to take advantage of that space, so here are the steps.
     </div>
     <div style="display: inline-block;" align="top">
@@ -58,7 +58,7 @@ I've found an easy way to make your launch image/icon be centered on all device 
  1. With your Image View selected.  
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering1.png" style="width: 125px;"/>  
 
- 2. Click the Center and Middle buttons next to "Position in Parent"  
+ 2. Click the Center and Middle buttons next to **Position in Parent**  
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering2.png" style="width: 300px;"/>  
  This will center the image in the middle of your current device view.  
 
@@ -66,7 +66,7 @@ I've found an easy way to make your launch image/icon be centered on all device 
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering3.png" style="width: 300px;"/>  
  Now your image will stay centered on all device sizes  
 
- 4. If you image is of high enough resolution, you can also click on the dashed arrows inside the box to allow it to be autosized on larger/smaller screen sizes.  
+ 4. If your image is of high enough resolution, you can also click on the dashed arrows inside the box to allow it to be autosized on larger/smaller screen sizes.  
  <img src="{{site.baseurl}}/images/UseAllTheSpaceOniPhoneX/centering4.png" style="width: 300px;"/>  
 
 
