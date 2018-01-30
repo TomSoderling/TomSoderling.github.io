@@ -7,7 +7,8 @@ author: tom
 comments: true
 tags: [Visual Studio App Center, Xamarin, Xamarin.UITest, UI Test, iOS]
 ---
-Visual Studio App Center continues to amaze and impress me. Over Christmas break, I set up CI (Continuous Integration) and Release/App Store builds for all my little app projects - which was truly a delightful experience - and they've been humming along smoothly. 
+Visual Studio App Center continues to amaze and impress me.  
+Over Christmas break, I set up CI (Continuous Integration) and Release/App Store builds for all my little app projects - which was truly a delightful experience - and they've been humming along smoothly.  
 It's surprising how quickly I've already taken them for granted. I push code, they build, run the automated launch test on a real device, I get a nice email to install the build on test devices, and can push it to the app stores if it makes the cut. So nice. It's hard to imagine I used to do it any other way.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/CIBuilds.png" style="width: 700px;"/> 
 
