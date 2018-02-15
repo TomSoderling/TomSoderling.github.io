@@ -53,7 +53,7 @@ I love meeting and connecting with new people, so let's be friends on [Twitter!]
 ### Stuff I'm Working On
 
 Pickster 2 for iOS: [![Build status](https://build.appcenter.ms/v0.1/apps/7464ca5b-fc9a-4165-981b-7d28c8d2af47/branches/master/badge)](https://appcenter.ms)  
-Pickster 2 for Android: [![Build status](https://build.appcenter.ms/v0.1/apps/c6db1a5e-027f-4551-89f3-a1eb546e08a8/branches/master/badge)](https://appcenter.ms)  
+Pickster 2 for Android: [![Build status](https://build.appcenter.ms/v0.1/apps/1d2256b6-6ae1-4e42-887b-28e7f577db18/branches/master/badge)](https://appcenter.ms)
 
 <!--
 <a href="{{site.baseurl}}/resume/Tom_Soderling_Resume.pdf" download>My Resume</a>
