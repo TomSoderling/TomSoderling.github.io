@@ -63,6 +63,3 @@ Pickster 2 for Android: [![Build status](https://build.appcenter.ms/v0.1/apps/1d
 
 - Case study on the [Xamarin blog](https://blog.xamarin.com/mobile-composer-transforms-products-people-and-processes-with-xamarin-apps/)
 - Case study [by Microsoft](https://customers.microsoft.com/en-us/story/orchestrating-marketing-and-sales-performance)-->
-
-
-<script src="https://gist.github.com/benbalter/5555251.js"></script>
