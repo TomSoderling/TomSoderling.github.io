@@ -30,7 +30,7 @@ bash --version
 I will sometimes put this line at the beginning of my script, so no matter what machine it runs on (local, CI build agent, coworkers), I can check the bash version to make sure all the commands in my script are going to be compatible and peform as I had planned.
 
 
-## What needs to happen to an .IPA to rebrand and resign?
+## What needs to happen to an .IPA to re-brand and re-sign?
 
 Here's a list of what we do to take a base app and spit out a rebranded one.  We'll dive into these deeper below, but I want to give a high level perspective of what needs to be done.
 
@@ -49,12 +49,14 @@ var width = 200;
 var height = 200;
 ```
 
-# Shoot. Doens't this mean _someone else_ can do this to _my app_ too?
+
+
+# Shoot. Doesn't this mean _someone else_ can do this to _my app_ too?
 
 Yes. Sorry. And it certainly is being done. A lot of apps that hit the iOS App Store are immediately ripped off by people that resign and resubmit them as their own. So expect that it will happen and plan for it.  
 
  - These days, most business or enterprise apps are pretty useless without access to the backend server, so being able to control that access is key.
- - Obfuscate code you don't want decompiled or messed with.  I've heard good things about [Babel](http://babelfor.net). It's a 3rd of the price of the popular Dotfuscator and can obfuscate public methods - something others can't do.
+ - Obfuscate code you don't want de-compiled or messed with.  I've heard good things about [Babel](http://babelfor.net). It's a 3rd of the price of the popular Dotfuscator and can obfuscate public methods - something others can't do.
  - [WHAT ELSE CAN BE DONE? Link?]
 
 # Resources
