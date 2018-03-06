@@ -9,7 +9,7 @@ tags: [Xamarin.Forms, Performance]
 ---
 
 <div>
-    <div style="display: inline-block; width: 75%; vertical-align: top;">
+    <div style="display: inline-block; width: 77%; vertical-align: top;">
     What's more fun than writing code?
     <br/><br/>
     Deleting it! 
