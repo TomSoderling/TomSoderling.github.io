@@ -47,7 +47,7 @@ This code may seem innocuous, not really hurting anything - but there are 2 reas
 
 1. The default value of a view's HorizontalOptions and VerticalOptions properties [are **already** LayoutOptions.Fill](https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/layout-options/#Overview), so it's completely unnecessary to set this.  
 
-1. Every time you set it, your app is taking an unnecessary performance hit on the chin. Even though you’re setting those properties to what they already were, it comes with a cost, so __just don't do it__.  
+1. Every time you set it, your app is taking an unnecessary performance hit on the chin. Even though you’re setting those properties to what they already were, it comes with a cost, so __just don't do it__. In addition, the Xamarin docs say changing these properties "consumes memory, even when setting them to the default values"
 
 * * *
 
@@ -58,3 +58,4 @@ Now that your app will benefit from this change, do your team a favor and point 
 ## Resources
 - [Optimizing App Performance with Xamarin.Forms, by Jason Smith](https://www.youtube.com/watch?v=RZvdql3Ev0E)
 - Kent Boogart put together this [really great, easily accessible summary](https://kent-boogaart.com/blog/jason-smith%27s-xamarin-forms-performance-tips) that's helpful as a reference
+- [Optimize Layout Performance](https://developer.xamarin.com/guides/xamarin-forms/deployment-testing/performance/#Optimize_Layout_Performance) from Xamarin docs
