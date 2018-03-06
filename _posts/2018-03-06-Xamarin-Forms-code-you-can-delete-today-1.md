@@ -9,7 +9,7 @@ tags: [Xamarin.Forms, Performance]
 ---
 
 <div>
-    <div style="display: inline-block; width: 70%; vertical-align: top;">
+    <div style="display: inline-block; width: 75%; vertical-align: top;">
     What's more fun than writing code?
     <br/><br/>
     Deleting it! 
@@ -20,7 +20,7 @@ tags: [Xamarin.Forms, Performance]
     As much as we as developers really love to solve problems by writing code - <i>deleting</i> code, (or writing less of it in the first place) should be a fundamental desire of mature developers who recognize that each line of code written is a trade-off: is this code worth the potential bugs and the cost of care and feed (maintenance) down the road? 
     </div>
     <div style="display: inline-block;" align="top">
-        <img src="{{site.baseurl}}/images/XFCodeYouCanDelete/Anticode.png" style="width: 250px;"/> 
+        <img src="{{site.baseurl}}/images/XFCodeYouCanDelete/Anti-code.png" style="width: 200px;"/> 
     </div>
 </div>
 
