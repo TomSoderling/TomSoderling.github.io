@@ -9,7 +9,7 @@ tags: [Xamarin.Forms, Performance]
 ---
 
 <div>
-    <div style="display: inline-block; width: 77%; vertical-align: top;">
+    <div style="display: inline-block; width: 80%; vertical-align: top;">
     What's more fun than writing code?
     <br/><br/>
     Deleting it! 
@@ -47,8 +47,9 @@ This code may seem innocuous, not really hurting anything - but there are 2 reas
 
 1. The default value of a view's HorizontalOptions and VerticalOptions properties [are **already** LayoutOptions.Fill](https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/layout-options/#Overview), so it's completely unnecessary to set this.  
 
-1. Every time you set it, your app is taking an unnecessary performance hit on the chin. Even though you’re setting those properties to what they already were, it comes with a cost, so just don't do it.  
+1. Every time you set it, your app is taking an unnecessary performance hit on the chin. Even though you’re setting those properties to what they already were, it comes with a cost, so __just don't do it__.  
 
+* * *
 
 Now that your app will benefit from this change, do your team a favor and point out this necessary code-ectomy in your next PR. We're all learning to be better Xamarin.Forms developers.  
 
