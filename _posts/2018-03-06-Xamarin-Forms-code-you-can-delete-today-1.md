@@ -20,7 +20,7 @@ tags: [Xamarin.Forms, Performance]
     As much as we as developers really love to solve problems by writing code - _deleting_ code, (or writing less of it in the first place) should be a fundamental desire of mature developers who recognize that each line of code written is a trade-off: is this code worth the potential bugs and the cost of care and feed (maintenance) down the road? 
     </div>
     <div style="display: inline-block;" align="top">
-        <img src="{{site.baseurl}}/images/XFCodeYouCanDelete/Anticode.png" style="width: 150px;"/> 
+        <img src="{{site.baseurl}}/images/XFCodeYouCanDelete/Anticode.png" style="width: 250px;"/> 
     </div>
 </div>
 
@@ -33,11 +33,9 @@ This tip comes from the now-famous Optimizing App Performance with Xamarin.Forms
 Here are the detailed steps to delete this code from your app:
 
 1. Go to Visual Studio and search for LayoutOptions.Fill in your entire Xamarin.Forms solution  
-
-<img src="{{site.baseurl}}/images/XFCodeYouCanDelete/FindLayoutOptions.Fill.png" style="width: 300px;"/>
-
 2. Delete all those lines of code. (I like to use cmd+x)
 
+<img src="{{site.baseurl}}/images/XFCodeYouCanDelete/FindLayoutOptions.Fill.png" style="width: 500px;"/> 
 
 
 That's it!  
