@@ -30,12 +30,12 @@ tags: [Xamarin.Forms, Performance]
 
 This tip comes from the now-famous Optimizing App Performance with Xamarin.Forms talk that Jason Smith gave at the 2016 Xamarin Evolve conference. Even though the talk was given nearly 2 years ago, I/we/apps are still breaking many of the cardinal Xamarin.Forms no-no's and needlessly paying the price in performance.  
 
-Here are the detailed steps to delete this code from your app:
+Here are the detailed steps to delete this hurtful code from your app:
 
 1. Go to Visual Studio and search for LayoutOptions.Fill in your entire Xamarin.Forms solution  
 2. Delete all those lines of code. (I like to use cmd+x)
 
-<img src="{{site.baseurl}}/images/XFCodeYouCanDelete/FindLayoutOptions.Fill.png" style="width: 400px;"/> 
+<img src="{{site.baseurl}}/images/XFCodeYouCanDelete/FindLayoutOptions.Fill.png" style="width: 450px;"/> 
 
 
 That's it!  Hasta la visa, baby!  
@@ -43,9 +43,14 @@ That's it!  Hasta la visa, baby!
 
 ## But Why?
 
-1. The default value of a view's HorizontalOptions and VerticalOptions properties [is _already_ LayoutOptions.Fill](https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/layout-options/#Overview), so it's completely unnecessary to set this.  
+This code may seem innocuous, not really hurting anything - but there are 2 reasons why you need to delete this code from all your Xamarin.Forms apps ASAP.
 
-1. Every time you set it, your app is taking an unnecessary performance hit on the chin. Even though you’re setting it to what it already was, it comes with a cost.  
+1. The default value of a view's HorizontalOptions and VerticalOptions properties [are **already** LayoutOptions.Fill](https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/layout-options/#Overview), so it's completely unnecessary to set this.  
+
+1. Every time you set it, your app is taking an unnecessary performance hit on the chin. Even though you’re setting those properties to what they already were, it comes with a cost, so just don't do it.  
+
+
+Now that your app will benefit from this change, do your team a favor and point out this necessary code-ectomy in your next PR. We're all learning to be better Xamarin.Forms developers.  
 
 
 
