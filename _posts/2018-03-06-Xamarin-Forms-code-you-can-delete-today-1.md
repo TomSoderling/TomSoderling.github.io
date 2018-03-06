@@ -32,11 +32,11 @@ This tip comes from the now-famous Optimizing App Performance with Xamarin.Forms
 
 Here are the detailed steps to delete this code from your app:
 
-1. ) Go to Visual Studio and search for LayoutOptions.Fill in your entire Xamarin.Forms solution  
+1. Go to Visual Studio and search for LayoutOptions.Fill in your entire Xamarin.Forms solution  
 
 <img src="{{site.baseurl}}/images/XFCodeYouCanDelete/FindLayoutOptions.Fill.png" style="width: 300px;"/>
 
-2. ) Delete all those lines of code. (I like to use cmd+x)
+2. Delete all those lines of code. (I like to use cmd+x)
 
 
 
@@ -45,9 +45,9 @@ That's it!
 
 ## But Why?
 
-1. ) The default value of a view's HorizontalOptions and VerticalOptions properties [is _already_ LayoutOptions.Fill](https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/layout-options/#Overview), so it's completely unnecessary to set this.  
+1. The default value of a view's HorizontalOptions and VerticalOptions properties [is _already_ LayoutOptions.Fill](https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/layout-options/#Overview), so it's completely unnecessary to set this.  
 
-1. ) Every time you set it, your app is taking an unnecessary performance hit on the chin. Even though you’re setting it to what it already was, it comes with a cost.  
+1. Every time you set it, your app is taking an unnecessary performance hit on the chin. Even though you’re setting it to what it already was, it comes with a cost.  
 
 
 
