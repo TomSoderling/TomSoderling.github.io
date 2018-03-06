@@ -20,7 +20,7 @@ tags: [Xamarin.Forms, Performance]
     As much as we as developers really love to solve problems by writing code, deleting code, (or writing less of it in the first place) should be a fundamental desire of mature developers who recognize that each line of code written is a trade-off: is this code worth the potential bugs and the cost of care and feed (maintenance) down the road? 
     </div>
     <div style="display: inline-block;" align="top">
-        <img src="{{site.baseurl}}/images/XFCodeYouCanDelete/Anticode.png" style="width: 150;"/> 
+        <img src="{{site.baseurl}}/images/XFCodeYouCanDelete/Anticode.png" style="width: 150px;"/> 
     </div>
 </div>
 
