@@ -35,10 +35,10 @@ Here are the detailed steps to delete this code from your app:
 1. Go to Visual Studio and search for LayoutOptions.Fill in your entire Xamarin.Forms solution  
 2. Delete all those lines of code. (I like to use cmd+x)
 
-<img src="{{site.baseurl}}/images/XFCodeYouCanDelete/FindLayoutOptions.Fill.png" style="width: 500px;"/> 
+<img src="{{site.baseurl}}/images/XFCodeYouCanDelete/FindLayoutOptions.Fill.png" style="width: 400px;"/> 
 
 
-That's it!  
+That's it!  Hasta la visa, baby!  
 
 
 ## But Why?
