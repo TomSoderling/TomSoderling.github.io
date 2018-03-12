@@ -50,23 +50,28 @@ I wrote the UWP support for these two great drawing libraries that are popular a
 I love meeting and connecting with new people, so let's be friends on [Twitter!](https://twitter.com/tomsoderling)
 
 
-### Stuff I'm Working On
-
-Pickster 2 for iOS: [![Build status](https://build.appcenter.ms/v0.1/apps/7464ca5b-fc9a-4165-981b-7d28c8d2af47/branches/master/badge)](https://appcenter.ms)  
-Pickster 2 for Android: [![Build status](https://build.appcenter.ms/v0.1/apps/1d2256b6-6ae1-4e42-887b-28e7f577db18/branches/master/badge)](https://appcenter.ms)
-
+### Stuff I'm Working On  
 
 <table>
   <tr>
-    <td>Pickster 2 for iOS</td>
-    <td><img src="https://build.appcenter.ms/v0.1/apps/7464ca5b-fc9a-4165-981b-7d28c8d2af47/branches/master/badge" alt="Build badge: Pickster 2 for iOS"> </td>
+    <td>Pickster 2 for iOS </td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/7464ca5b-fc9a-4165-981b-7d28c8d2af47/branches/master/badge" alt="Build badge: Pickster 2 for iOS"></td>
   </tr>
   <tr>
-    <td>Pickster 2 for Android</td>
+    <td>Pickster 2 for Android </td>
     <td><img src="https://build.appcenter.ms/v0.1/apps/1d2256b6-6ae1-4e42-887b-28e7f577db18/branches/master/badge" alt="Build badge: Pickster 2 for Android"></td>
-    </td>
+  </tr>
+
+  <tr>
+    <td>Fresh Beer for iOS </td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/6d077ca8-645e-407e-bf9f-a426edad8851/branches/master/badge" alt="Build badge: Fresh Beer for iOS"></td>
+  </tr>
+  <tr>
+    <td>Fresh Beer for Android </td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/d6215694-9215-4306-aeef-d24098d9ce06/branches/master/badge" alt="Build badge: Fresh Beer for Android"></td>
   </tr>
 </table>
+
 
 <!--
 <a href="{{site.baseurl}}/resume/Tom_Soderling_Resume.pdf" download>My Resume</a>
