@@ -59,14 +59,11 @@ Pickster 2 for Android: [![Build status](https://build.appcenter.ms/v0.1/apps/1d
 <table>
   <tr>
     <td>Pickster 2 for iOS</td>
-    <td>Pickster 2 for Android</td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/7464ca5b-fc9a-4165-981b-7d28c8d2af47/branches/master/badge" alt="Build badge: Pickster 2 for iOS"> </td>
   </tr>
   <tr>
-    <td style="vertical-align: top">
-      <img src="https://build.appcenter.ms/v0.1/apps/7464ca5b-fc9a-4165-981b-7d28c8d2af47/branches/master/badge" alt="Build badge: Pickster 2 for iOS">
-    </td>
-    <td style="vertical-align: top">
-      <img src="https://build.appcenter.ms/v0.1/apps/1d2256b6-6ae1-4e42-887b-28e7f577db18/branches/master/badge" alt="Build badge: Pickster 2 for Android">
+    <td>Pickster 2 for Android</td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/1d2256b6-6ae1-4e42-887b-28e7f577db18/branches/master/badge" alt="Build badge: Pickster 2 for Android"></td>
     </td>
   </tr>
 </table>
