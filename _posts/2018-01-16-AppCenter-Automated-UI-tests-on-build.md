@@ -106,7 +106,7 @@ Last two easy ones. They're both generated for you. The first is the name of the
 ```bash
 --build-dir $APPCENTER_SOURCE_DIRECTORY/[your Xamarin UI Test project name]/bin/Debug
 ```
-The generated command simply suggests "pathToUITestBuildDir" for this parameter value. Yes, make no mistake, this is really the UI test project build directory. Your Xamarin UI Test project MUST be built as part of your App Center build, so that meant for me, I had to build the app solution - not simply the iOS project like other builds. When built, the output goes into the $APPCENTER_SOURCE_DIRECTORY, specifically in the /bin/Debug folder.  
+The generated command simply suggests "pathToUITestBuildDir" for this parameter value. Yes, make no mistake, this is really the UI test project build directory. Your Xamarin UI Test project MUST be built as part of your App Center build, so that meant for me, I had to chose to **build the app solution file in my App Center CI build** - not simply the iOS project like I normally would. When built, the output goes into the $APPCENTER_SOURCE_DIRECTORY, specifically in the /bin/Debug folder.  
 
 12 of 34 builds spent on this.  Part of what made this so tricky is that I was missing a compiler symbol in the properties of my iOS project. So far, I had only run the UI Tests on a simulator, so I had to add this compiler symbol to my Debug - iPhone configuration.  
 <img src="{{site.baseurl}}/images/AppCenter-AutomatedUITests/compilerSymbols.png" style="width: 800px;"/> 
