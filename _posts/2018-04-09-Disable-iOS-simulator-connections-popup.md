@@ -43,4 +43,4 @@ This grants you the user (u) execution permission (x) on this script file.
 For whatever reason, these two firewall exceptions will be reset whenever you restart your Mac, so put this script in a handy place because you'll need to run it again.  
 
 <br/>
-That's it! Hope this saves you a little time and clicks. Don't forget to share this script!  
+That's it! Hope this saves you a little time and clicks. Don't forget to share this script with you fellow mobile developers!  
