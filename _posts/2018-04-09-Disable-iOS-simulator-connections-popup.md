@@ -15,9 +15,9 @@ What's __not__ convenient and gets pretty downright annoying is being forced to 
 Thankfully, you can use this handy little bash script to help silence this popup and deploy without interruption to the simulator. Sometimes, it's the little things that make a big difference.
 
 
-## Uh... What Does This Script Do?
+## So What Does This Script Do, Exactly?
 
-Yes, before downloading and running a bash script on your personal machine, you should probably know what it's doing. Especially since this script needs your password to execute the commands needed.
+Yes, before downloading and running a bash script on your personal machine, you should probably know what it's doing. Especially since this one needs your password to execute the commands needed. Fear not, everything is on the up and up.
 
 
 
