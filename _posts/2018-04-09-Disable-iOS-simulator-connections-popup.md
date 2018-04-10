@@ -16,7 +16,7 @@ Thankfully, you can use this handy little bash script to help silence this pop-u
 
 ## So What Does This Script Do, Exactly?
 
-Yes, before downloading and running a bash script on your personal machine, you should probably know what it's doing. Fear not, everything is on the up and up.  
+Yes, before downloading a bash script from the internet and running it on your personal machine, you should probably know what it's doing. Fear not, everything is on the up and up here.  
 
 Your Mac has a firewall. A firewall that doesn't remember that you've clicked "Allow" a thousand times.  
 What it doesn't realize is that incoming connections to the Simulator are probably not malicious. In fact, you probably __always__ want to allow those connections because you're writing an app that is designed to make connections with the outside world.  
