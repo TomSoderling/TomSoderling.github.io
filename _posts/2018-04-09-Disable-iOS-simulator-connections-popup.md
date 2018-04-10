@@ -9,7 +9,7 @@ tags: [Xamarin.Forms, iOS, Simulator]
 ---
 Deploying to the iOS simulators is great - so fast and convenient.  
 What's __not__ convenient and gets pretty downright annoying is being forced to click "Allow" on this pop-up EVERY SINGLE TIME I do it.  
-<img src="{{site.baseurl}}/images/DisableiOSSimulatorPopup/iOSSimulatorPopup.png" style="width: 500px;"/>  
+<img src="{{site.baseurl}}/images/DisableiOSSimulatorPopup/iOSSimulatorPopup.png" style="width: 600px;"/>
 *yes, for the love, just allow them already and stop asking me*
 
 Thankfully, you can use this handy little bash script to help silence this pop-up and deploy without interruption to the simulator. Sometimes, it's the little things that make a big difference. I think once you stop clicking this button on every deploy, you'll wonder how you ever got along without this little script.
