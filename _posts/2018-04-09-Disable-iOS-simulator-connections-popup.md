@@ -31,7 +31,7 @@ Here's the script:
 ## How to Use This Script
 
 1. Copy the script above and save it to a new file with a .sh extension
-2. You'll need to change the permissions on the file so you can actually execute the script. You'll only need to do this once. In terminal, run the command:
+2. You'll need to change the permissions on the file so you can execute the script, otherwise you'll get a "Permission denied" message if you try. You'll only need to do this once. In terminal, run the command:
 ```
 chmod u+x [the path to your new script file.sh]
 ```
