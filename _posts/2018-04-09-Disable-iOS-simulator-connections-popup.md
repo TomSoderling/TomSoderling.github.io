@@ -22,7 +22,7 @@ Your Mac has a firewall. A firewall that doesn't remember that you've clicked "A
 What it doesn't realize is that incoming connections to the Simulator are probably not malicious. In fact, you probably __always__ want to allow those connections because you're writing an app that is designed to make connections with the outside world.  
 
 Thankfully this firewall allows you to make exceptions for certain apps, but I wasn't able to do it using the UI; hence this script.  
-We need to make an exception for two apps: the Simulator and Xcode. In order to do that, we need to turn the firewall off for a moment to add these exceptions, and the last statement in the file turns it back on and gives a confirmation. As you can imagine, turning the firewall off/on requires super user access (that's what the sudo command is for) and will prompt you for you system password.
+We need to make an exception for two apps: the Simulator and Xcode. In order to do that, we need to turn the firewall off for a moment to add these exceptions, and the last statement in the file turns it back on and gives a confirmation. As you can imagine, turning the firewall off/on requires super user access (that's what the sudo command is for) so terminal will prompt you for you system password.
 
 Here's the script: 
 <script src="https://gist.github.com/TomSoderling/9b3d582c4c895dde4ed1eac3f987b764.js"></script>
