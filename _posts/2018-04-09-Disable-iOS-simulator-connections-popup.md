@@ -23,5 +23,13 @@ Your Mac has a firewall. A firewall this is a little too protective and doesn't 
 Thankfully this firewall allows you to make exceptions for certain apps, but I wasn't able to do it using the UI; hence this script. We need to make an exception for 2 apps: the Simulator and Xcode.
 
 
-https://gist.github.com/TomSoderling/9b3d582c4c895dde4ed1eac3f987b764
+<script https://gist.github.com/TomSoderling/9b3d582c4c895dde4ed1eac3f987b764></script>
 
+
+## How to Use This Script
+
+1. Save this script to a new file with a .sh extension
+1. You'll need to change the execute permissions on the file so you can actually run the script. In terminal, run:
+```
+chmod u+x [the path to your new script file.sh]
+```
