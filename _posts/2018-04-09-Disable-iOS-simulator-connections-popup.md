@@ -39,6 +39,7 @@ This grants you the user (u) execution permission (x) on this script file.
 3. Then just drag the file into terminal and hit enter to run it. You'll be prompted to enter your system password for sudo access.  
 
 
-For whatever reason, these two firewall exceptions will be reset once you restart your Mac, so you'll need to run the script again.  
+For whatever reason, these two firewall exceptions will be reset whenever you restart your Mac, so put this script in a handy place because you'll need to run it again.  
 
+<br/>
 That's it! Hope this saves you a little time and clicks. Don't forget to share this script!  
