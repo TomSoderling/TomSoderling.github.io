@@ -9,7 +9,7 @@ tags: [Xamarin.Forms, iOS, Simulator]
 ---
 
 <div>
-    Deploying to the iOS simulators is great - so fast and convenient. 
+    Deploying to the iOS simulators is great - so fast and convenient. I think every mobile developer I know likes them. 
     <br/><br/>
     What's <b>not</b> convenient and gets pretty downright annoying is being forced to click "Allow" on this popup EVERY SINGLE TIME I do it. 
     <br/><br/>
