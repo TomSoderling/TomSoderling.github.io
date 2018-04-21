@@ -35,7 +35,7 @@ Here are the 5 pieces you need to integrate UI tests that run in Xamarin Test Cl
 ## Pieces #1 & #2
 
 You have to be authenticated with App Center in order to run the "appcenter test run uitest" command.  
-Follow [steps 1-5 here](https://docs.microsoft.com/en-us/appcenter/api-docs/) to generate an App Center API token.  
+Follow [steps 1-9 here](https://docs.microsoft.com/en-us/appcenter/api-docs/) to generate an App Center API token.  
 Using the build configuration settings, create a new build environment variable named "appCenterLoginApiToken" or something. For its value, paste in the token you just generated.  This env. variable can now be used in our post-build script.  
 
 
@@ -145,6 +145,17 @@ Here's more info on the [3 types of App Center build scripts](https://docs.micro
 [Find it on github here](https://github.com/TomSoderling/VSAppCenter/blob/master/appcenter-post-build.sh)
 
 
+
+# Troubleshooting
+
+Even with this guide, things will fail while you're getting everything right. The most common error is when App Center can't find a file that you've specified. The best advice I can give to troubleshoot that, is to just list out the files of the directory where you think the file is. Chances are, it's named something you didn't expect, or in a sub-folder you didn't know was there.
+
+To list the files in a directory, just add a ls [your folder name] command to the build script file. It will be the best way to track down these types of errors.
+
+```
+echo "list files in APPCENTER_OUTPUT_DIRECTORY"
+ls $APPCENTER_OUTPUT_DIRECTORY
+```
 
 
 # Enjoy!
