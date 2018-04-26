@@ -68,7 +68,8 @@ I love meeting and connecting with new people, so let's be friends on [Twitter!]
   </tr>
   <tr>
     <td>Fresh Beer for Android </td>
-    <td><img src="https://build.appcenter.ms/v0.1/apps/d6215694-9215-4306-aeef-d24098d9ce06/branches/master/badge" alt="Build badge: Fresh Beer for Android"></td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/960f28cf-5268-4032-b79e-2b0e39b91d29/branches/master/badge"
+    alt="Build badge: Fresh Beer for Android"></td>
   </tr>
 </table>
 
