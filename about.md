@@ -26,9 +26,7 @@ permalink: /about/
   <br />
   <a href="https://itunes.apple.com/us/app/pickster/id1055947478">Pickster</a>
   <br />
-  <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">Spaniel - iOS</a>
-  <br />
-  <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Spaniel - Android</a>
+  Spaniel: <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a>
 
   <br />
   <br />
