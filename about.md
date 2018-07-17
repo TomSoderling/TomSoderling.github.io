@@ -9,7 +9,7 @@ permalink: /about/
     <img src="{{site.baseurl}}/images/trophyPhoto.jpg" width="200" />  
   </div>
   <div style="display: inline-block; width: 73%; vertical-align: top;">I'm an exuberant software developer, speaker, and open source contributor, with 10+ years experience building applications using the Microsoft technology stack. I specialize in developing cross-platform mobile apps using Xamarin technologies and am a 4-time Xamarin Certified Mobile Developer. (it's an old picture) <br/><br/>
-  I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer at Polaris Industries working on the <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Ride Command</a> mobile app.
+  I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer at Polaris Industries working on the <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Ride Command</a> mobile apps.
   </div>
 </div>
 
@@ -25,6 +25,10 @@ permalink: /about/
   <a href="https://itunes.apple.com/us/app/how-deep-is-it/id955364125">How Deep Is It?</a>
   <br />
   <a href="https://itunes.apple.com/us/app/pickster/id1055947478">Pickster</a>
+  <br />
+  <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">Spaniel - iOS</a>
+  <br />
+  <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Spaniel - Android</a>
 
   <br />
   <br />
@@ -43,6 +47,11 @@ permalink: /about/
 I wrote the UWP support for these two great drawing libraries that are popular among Xamarin developers:  
  - [NGraphics](https://github.com/praeclarum/NGraphics) - a cross platform library for rendering vector graphics on .NET
  - [NControl](https://github.com/chrfalch/NControl) - a simple Xamarin.Forms wrapper control around the NGraphics library
+
+
+### Speaking
+
+<script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/8d17c4ea-d93b-48fc-a090-03db71381100/0x0x3fb393x"></script>
 
 
 ### Contact
