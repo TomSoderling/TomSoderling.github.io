@@ -49,8 +49,11 @@ I wrote the UWP support for these two great drawing libraries that are popular a
 
 ### Speaking
 
-Here are some of my upcoming sessions:
-<script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/8d17c4ea-d93b-48fc-a090-03db71381100/0x0xfa6321x20"></script>
+Here are some of my current talks right now:
+<script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/8d17c4ea-d93b-48fc-a090-03db71381100/0x0xfa6321x"></script>
+
+And the next events I'll be speaking at:
+<script type="text/javascript" src="https://sessionize.com/api/speaker/events/8d17c4ea-d93b-48fc-a090-03db71381100/0x0xfa6321x"></script>
 
 Slides and code from my talk, Automate the Lifecycle of Your Apps with Visual Studio App Center, at [Twin Cities Code Camp](https://twincitiescodecamp.com) can be found [here on github](https://github.com/TomSoderling/VSAppCenter)
 
