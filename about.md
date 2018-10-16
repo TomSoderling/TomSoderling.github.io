@@ -72,7 +72,7 @@ I love meeting and connecting with new people, so let's be friends on [Twitter!]
   </tr>
   <tr>
     <td>Pickster 2 for Android </td>
-    <td><img src="https://build.appcenter.ms/v0.1/apps/1d2256b6-6ae1-4e42-887b-28e7f577db18/branches/master/badge" alt="Build badge: Pickster 2 for Android"></td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/960f28cf-5268-4032-b79e-2b0e39b91d29/branches/master/badge" alt="Build badge: Pickster 2 for Android"></td>
   </tr>
 
   <tr>
@@ -85,6 +85,7 @@ I love meeting and connecting with new people, so let's be friends on [Twitter!]
     alt="Build badge: Fresh Beer for Android"></td>
   </tr>
 </table>
+Thank you VS App Center!
 
 
 <!--
