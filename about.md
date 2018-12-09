@@ -84,6 +84,16 @@ I love meeting and connecting with new people, so let's be friends on [Twitter!]
     <td><img src="https://build.appcenter.ms/v0.1/apps/960f28cf-5268-4032-b79e-2b0e39b91d29/branches/master/badge"
     alt="Build badge: Fresh Beer for Android"></td>
   </tr>
+
+  <tr>
+    <td>Tsaphan for iOS </td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/8eb0798c-44e4-4b87-99f3-610bb54e63f2/branches/master/badge" alt="Build badge: Tsaphan for iOS"></td>
+  </tr>
+  <tr>
+    <td>Tsaphan for Android </td>
+    <td><img src="https://build.appcenter.ms/v0.1/apps/021b1fd4-f16f-4135-8073-326b15713604/branches/master/badge"
+    alt="Build badge: Tsaphan for Android"></td>
+  </tr>
 </table>
 Thank you VS App Center!
 
