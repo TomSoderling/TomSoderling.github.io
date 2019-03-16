@@ -19,17 +19,16 @@ permalink: /about/
   <div style="display: inline-block; width: 73%; vertical-align: top;">
     In addition to my professional work, I've also published several personal apps to the <a href="https://itunes.apple.com/us/developer/tom-soderling/id955364124">iOS App Store</a> & <a href="https://play.google.com/store/apps/developer?id=MinneAppolis+Labs,+LLC">Google Play Store</a>
     <br />
-    <p>
-      <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="40" align="bottom" /><a href="https://itunes.apple.com/us/app/how-deep-is-it/id955364125">How Deep Is It?</a>
+    <a href="https://itunes.apple.com/us/app/how-deep-is-it/id955364125">How Deep Is It?</a>
     </p>
     <br />
-    <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="40" /> Pickster, for <a href="https://itunes.apple.com/us/app/pickster/id1055947478">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.Pickster">Android</a>
+    Pickster, for <a href="https://itunes.apple.com/us/app/pickster/id1055947478">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.Pickster">Android</a>
     <br />
-    <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="40" /> Fresh Brews, for <a href="https://itunes.apple.com/us/app/fresh-brews/id1358205316">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.freshbrews">Android</a>
+    Fresh Brews, for <a href="https://itunes.apple.com/us/app/fresh-brews/id1358205316">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.freshbrews">Android</a>
     <br />
-    <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="40" /> Tsaphan, for <a href="https://itunes.apple.com/us/app/tsaphan/id1445380570">iOS</a> and Android (coming soon)
+    Tsaphan, for <a href="https://itunes.apple.com/us/app/tsaphan/id1445380570">iOS</a> and Android (coming soon)
     <br />
-    <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="40" /> Spaniel, for <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a>
+    Spaniel, for <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a>
     <br />
     <br />
     I regularly attend and speak at the <a href="https://www.meetup.com/Minnesota-Enterprise-Mobile">MN Enterprise Mobile</a> meetup for Xamarin developers, so if you're in the area I'd highly recommend checking it out.
