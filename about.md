@@ -19,7 +19,9 @@ permalink: /about/
   <div style="display: inline-block; width: 73%; vertical-align: top;">
     In addition to my professional work, I've also published several personal apps to the <a href="https://itunes.apple.com/us/developer/tom-soderling/id955364124">iOS App Store</a> & <a href="https://play.google.com/store/apps/developer?id=MinneAppolis+Labs,+LLC">Google Play Store</a>
     <br />
-    <img src="{{site.baseurl}}/images/XCMD_badge.svg" align="middle" width="40" /><a href="https://itunes.apple.com/us/app/how-deep-is-it/id955364125">How Deep Is It?</a>
+    <p>
+      <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="40" align="middle" /><a href="https://itunes.apple.com/us/app/how-deep-is-it/id955364125">How Deep Is It?</a>
+    </p>
     <br />
     <img src="{{site.baseurl}}/images/XCMD_badge.svg" width="40" /> Pickster, for <a href="https://itunes.apple.com/us/app/pickster/id1055947478">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.Pickster">Android</a>
     <br />
