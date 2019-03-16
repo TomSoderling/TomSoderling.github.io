@@ -16,7 +16,7 @@ permalink: /about/
 ### Apps
 
 <div>
-  <div style="display: inline-block; width: 73%; vertical-align: top;">In addition to my professional work, I also have a several personal apps in the iOS App Store & Google Play Store
+  <div style="display: inline-block; width: 73%; vertical-align: top;">In addition to my professional work, I also have a several personal apps in the <a href="https://itunes.apple.com/us/developer/tom-soderling/id955364124">iOS App Store</a> & <a href="https://play.google.com/store/apps/developer?id=MinneAppolis+Labs,+LLC">Google Play Store</a>
   <br />
   <a href="https://itunes.apple.com/us/app/how-deep-is-it/id955364125">How Deep Is It?</a>
   <br />
