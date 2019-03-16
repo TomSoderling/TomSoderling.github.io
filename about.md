@@ -9,18 +9,13 @@ permalink: /about/
     <img src="{{site.baseurl}}/images/trophyPhoto.jpg" width="200" />  
   </div>
   <div style="display: inline-block; width: 73%; vertical-align: top;">I'm an exuberant software developer, speaker, and open source contributor, with 10+ years experience building applications using the Microsoft technology stack. I specialize in developing cross-platform mobile apps using Xamarin technologies and am a 4-time Xamarin Certified Mobile Developer. (it's an old picture) <br/><br/>
-  I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer at Polaris Industries working on the Ride Command family of mobile apps for <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Off-road</a>, <a href="https://ridecommand.indianmotorcycle.com/en-us/home">Indian Motorcycle</a>, and <a href="https://ridecommand.slingshot.polaris.com/en-us/home">Slingshot</a>
+  I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer at Polaris Industries working on the Ride Command family of mobile apps for <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Off-road & Snow</a>, <a href="https://ridecommand.indianmotorcycle.com/en-us/home">Indian Motorcycle</a>, and <a href="https://ridecommand.slingshot.polaris.com/en-us/home">Slingshot</a>
   </div>
 </div>
 
 
-<!--In addition to my professional work, I also have a couple personal apps in the iOS App Store (check 'em out, they're free!)
-- [How Deep Is It?](https://itunes.apple.com/us/app/how-deep-is-it/id955364125) 
-- [Pickster](https://itunes.apple.com/us/app/pickster/id1055947478) -->
-
-
 <div>
-  <div style="display: inline-block; width: 73%; vertical-align: top;">In addition to my professional work, I also have a several personal apps in the iOS App Store & Google Play Store:
+  <div style="display: inline-block; width: 73%; vertical-align: top;">In addition to my professional work, I also have a several personal apps in the iOS App Store & Google Play Store
   <br />
   <a href="https://itunes.apple.com/us/app/how-deep-is-it/id955364125">How Deep Is It?</a>
   <br />
