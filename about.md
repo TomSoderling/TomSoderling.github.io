@@ -28,7 +28,7 @@ permalink: /about/
     <br />
     Tsaphan, for <a href="https://itunes.apple.com/us/app/tsaphan/id1445380570">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.tsaphan">Android</a>
     <br />
-    Spaniel, for <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a>, which I've now made <a href="https://github.com/TomSoderling/Spaniel">open source</a>
+    Spaniel, for <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a> (which I've now made open source)</a>
     <br />
     <br />
     I regularly attend and speak at the <a href="https://www.meetup.com/Minnesota-Enterprise-Mobile">MN Enterprise Mobile</a> meetup for Xamarin developers, so if you're in the area I'd highly recommend checking it out.
@@ -43,6 +43,7 @@ permalink: /about/
 
 ### Open Source
 
+ - [Spaniel](https://github.com/TomSoderling/Spaniel) - An MVVM Xamarin.Forms app for iOS and Android to help run health checkups on your RESTful web service endpoints
 I wrote the UWP support for these two great drawing libraries that are popular among Xamarin developers:  
  - [NGraphics](https://github.com/praeclarum/NGraphics) - a cross platform library for rendering vector graphics on .NET
  - [NControl](https://github.com/chrfalch/NControl) - a simple Xamarin.Forms wrapper control around the NGraphics library
