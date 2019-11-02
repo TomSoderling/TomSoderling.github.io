@@ -58,6 +58,7 @@ And the next events I'll be speaking at:
 ### Open Source
 
  - [Spaniel](https://github.com/TomSoderling/Spaniel) - An MVVM Xamarin.Forms app for iOS and Android to help run health checkups on your RESTful web service endpoints  
+  
 I wrote the UWP support for these two great drawing libraries that are popular among Xamarin developers:  
  - [NGraphics](https://github.com/praeclarum/NGraphics) - a cross platform library for rendering vector graphics on .NET
  - [NControl](https://github.com/chrfalch/NControl) - a simple Xamarin.Forms wrapper control around the NGraphics library
