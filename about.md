@@ -9,7 +9,7 @@ permalink: /about/
     <img src="{{site.baseurl}}/images/trophyPhoto.jpg" width="200" />  
   </div>
   <div style="display: inline-block; width: 73%; vertical-align: top;">I'm an exuberant software developer, leader, and speaker, with 12+ years experience building applications using the Microsoft technology stack. I specialize in building awesome cross-platform mobile apps using Xamarin technologies and am a 5-time Xamarin Certified Mobile Developer. (it's an old picture) <br/><br/>
-  I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer at Polaris Industries working on the Ride Command family of mobile apps for <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Off-road & Snow</a>, <a href="https://ridecommand.indianmotorcycle.com/en-us/home">Indian Motorcycle</a>, and <a href="https://ridecommand.slingshot.polaris.com/en-us/home">Slingshot</a>
+  I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Lead Mobile App Developer at Polaris Industries working on the Ride Command family of mobile apps for <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Off-road & Snow</a>, <a href="https://ridecommand.indianmotorcycle.com/en-us/home">Indian Motorcycle</a>, and <a href="https://ridecommand.slingshot.polaris.com/en-us/home">Slingshot</a>
   </div>
 </div>
 
@@ -28,7 +28,7 @@ permalink: /about/
     <br />
     Tsaphan, for <a href="https://itunes.apple.com/us/app/tsaphan/id1445380570">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.tsaphan">Android</a>
     <br />
-    Spaniel, for <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a>
+    Spaniel, for <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a>, which I've now made <a href="https://github.com/TomSoderling/Spaniel">open source</a>
     <br />
     <br />
     I regularly attend and speak at the <a href="https://www.meetup.com/Minnesota-Enterprise-Mobile">MN Enterprise Mobile</a> meetup for Xamarin developers, so if you're in the area I'd highly recommend checking it out.
