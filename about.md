@@ -8,7 +8,7 @@ permalink: /about/
   <div style="display: inline-block;" align="top">
     <img src="{{site.baseurl}}/images/trophyPhoto.jpg" width="200" />  
   </div>
-  <div style="display: inline-block; width: 73%; vertical-align: top;">I'm an exuberant software developer, speaker, and open source contributor, with 10+ years experience building applications using the Microsoft technology stack. I specialize in developing cross-platform mobile apps using Xamarin technologies and am a 4-time Xamarin Certified Mobile Developer. (it's an old picture) <br/><br/>
+  <div style="display: inline-block; width: 73%; vertical-align: top;">I'm an exuberant software developer, leader, and speaker, with 12+ years experience building applications using the Microsoft technology stack. I specialize in building awesome cross-platform mobile apps using Xamarin technologies and am a 5-time Xamarin Certified Mobile Developer. (it's an old picture) <br/><br/>
   I live and work in the bustling center of "Silicon Prairie", Minneapolis MN, where I'm a Sr. Mobile Developer at Polaris Industries working on the Ride Command family of mobile apps for <a href="https://ridecommand.polaris.com/en-us/landing-pages/AppLandingPage">Off-road & Snow</a>, <a href="https://ridecommand.indianmotorcycle.com/en-us/home">Indian Motorcycle</a>, and <a href="https://ridecommand.slingshot.polaris.com/en-us/home">Slingshot</a>
   </div>
 </div>
@@ -26,7 +26,7 @@ permalink: /about/
     <br />
     Fresh Brews, for <a href="https://itunes.apple.com/us/app/fresh-brews/id1358205316">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.freshbrews">Android</a>
     <br />
-    Tsaphan, for <a href="https://itunes.apple.com/us/app/tsaphan/id1445380570">iOS</a> and Android (coming soon)
+    Tsaphan, for <a href="https://itunes.apple.com/us/app/tsaphan/id1445380570">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.tsaphan">Android</a>
     <br />
     Spaniel, for <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a>
     <br />
@@ -56,7 +56,9 @@ Here are some of my current talks right now:
 And the next events I'll be speaking at:
 <script type="text/javascript" src="https://sessionize.com/api/speaker/events/8d17c4ea-d93b-48fc-a090-03db71381100/0x0xfa6321x"></script>
 
-Slides and code from my talk, Automate the Lifecycle of Your Apps with Visual Studio App Center, at [Twin Cities Code Camp](https://twincitiescodecamp.com) can be found [here on github](https://github.com/TomSoderling/VSAppCenter)
+- Slides and code from my talk, Automate the Lifecycle of Your Apps with Visual Studio App Center, at [Twin Cities Code Camp](https://twincitiescodecamp.com) can be found [here on github](https://github.com/TomSoderling/VSAppCenter)
+
+- Slides and code from my talk, Building a Backend for Your Apps with Visual Studio App Center, at the [MN Developers Conference](https://mdc.ilmservice.com) can be found [here on github](https://github.com/TomSoderling/AppCenterMBaaSDemo)
 
 
 ### Contact
@@ -95,14 +97,14 @@ I love meeting and connecting with new people, so let's be friends on [Twitter!]
     alt="Build badge: Tsaphan for Android"></td>
   </tr>
 </table>
-Thank you VS App Center!
+Thank you [VS App Center!](https://appcenter.ms/apps)
 
 
 <!--
 <a href="{{site.baseurl}}/resume/Tom_Soderling_Resume.pdf" download>My Resume</a>
 -->
 
-<!--### Press
+### Press
 
 - Case study on the [Xamarin blog](https://blog.xamarin.com/mobile-composer-transforms-products-people-and-processes-with-xamarin-apps/)
-- Case study [by Microsoft](https://customers.microsoft.com/en-us/story/orchestrating-marketing-and-sales-performance)-->
+- Case study [by Microsoft](https://customers.microsoft.com/en-us/story/orchestrating-marketing-and-sales-performance)
