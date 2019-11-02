@@ -29,9 +29,6 @@ permalink: /about/
     Tsaphan, for <a href="https://itunes.apple.com/us/app/tsaphan/id1445380570">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.tomsoderling.tsaphan">Android</a>
     <br />
     Spaniel, for <a href="https://itunes.apple.com/us/app/spaniel/id1330330719">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.TomSoderling.Spaniel">Android</a> (which I've now made open source)
-    <br />
-    <br />
-    I regularly attend and speak at the <a href="https://www.meetup.com/Minnesota-Enterprise-Mobile">MN Enterprise Mobile</a> meetup for Xamarin developers, so if you're in the area I'd highly recommend checking it out.
   </div>
     <div style="display: inline-block;" align="top">
       <!-- <img src="{{site.baseurl}}/images/xcmdBadge.png" width="200" />   -->
@@ -41,17 +38,12 @@ permalink: /about/
 </div>
 
 
-### Open Source
-
- - [Spaniel](https://github.com/TomSoderling/Spaniel) - An MVVM Xamarin.Forms app for iOS and Android to help run health checkups on your RESTful web service endpoints  
-I wrote the UWP support for these two great drawing libraries that are popular among Xamarin developers:  
- - [NGraphics](https://github.com/praeclarum/NGraphics) - a cross platform library for rendering vector graphics on .NET
- - [NControl](https://github.com/chrfalch/NControl) - a simple Xamarin.Forms wrapper control around the NGraphics library
-
 
 ### Speaking
 
-Here are some of my current talks right now:
+I regularly attend and speak at the [MN Enterprise Mobile meeptup]("https://www.meetup.com/Minnesota-Enterprise-Mobile") for Xamarin developers, so if you're in the area I'd highly recommend checking it out.
+
+Some of my current talks right now:
 <script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/8d17c4ea-d93b-48fc-a090-03db71381100/0x0xfa6321x"></script>
 
 And the next events I'll be speaking at:
@@ -60,6 +52,16 @@ And the next events I'll be speaking at:
 - Slides and code from my talk, Automate the Lifecycle of Your Apps with Visual Studio App Center, at [Twin Cities Code Camp](https://twincitiescodecamp.com) can be found [here on github](https://github.com/TomSoderling/VSAppCenter)
 
 - Slides and code from my talk, Building a Backend for Your Apps with Visual Studio App Center, at the [MN Developers Conference](https://mdc.ilmservice.com) can be found [here on github](https://github.com/TomSoderling/AppCenterMBaaSDemo)
+
+
+
+### Open Source
+
+ - [Spaniel](https://github.com/TomSoderling/Spaniel) - An MVVM Xamarin.Forms app for iOS and Android to help run health checkups on your RESTful web service endpoints  
+I wrote the UWP support for these two great drawing libraries that are popular among Xamarin developers:  
+ - [NGraphics](https://github.com/praeclarum/NGraphics) - a cross platform library for rendering vector graphics on .NET
+ - [NControl](https://github.com/chrfalch/NControl) - a simple Xamarin.Forms wrapper control around the NGraphics library
+
 
 
 ### Contact
