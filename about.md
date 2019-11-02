@@ -108,7 +108,6 @@ Thank you [VS App Center!](https://appcenter.ms/apps)
 <a href="{{site.baseurl}}/resume/Tom_Soderling_Resume.pdf" download>My Resume</a>
 -->
 
+<!-- 
 ### Press
-
-- Case study on the [Xamarin blog](https://blog.xamarin.com/mobile-composer-transforms-products-people-and-processes-with-xamarin-apps/)
-- Case study [by Microsoft](https://customers.microsoft.com/en-us/story/orchestrating-marketing-and-sales-performance)
+-->
