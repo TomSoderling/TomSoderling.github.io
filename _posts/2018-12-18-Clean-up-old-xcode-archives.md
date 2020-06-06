@@ -28,10 +28,10 @@ We also structure every unit test we write using the same basic outline, so anyo
 
 ## Using It
 
-I set up this snippet to use the shortcut "test", so by typing that and pressing tab twice, voila! The whole unit test is stubbed out for me:  
+I set up this snippet to use the shortcut `test`, so by typing that and pressing tab twice, voila! The whole unit test is stubbed out for me:  
 <img src="{{site.baseurl}}/images/XamarinMonthCodeSnippets/InUse1.png" style="width: 600px;"/>  
 
-The snippet gives me a clue on what the first part of the name should be, UnitUnderTest, so I can enter that, press tab and move on to the other 2 parts of the name:
+The snippet gives me a clue on what the first part of the name should be, `UnitUnderTest`, so I can enter that, press tab and move on to the other 2 parts of the name:  
 <img src="{{site.baseurl}}/images/XamarinMonthCodeSnippets/InUse2.png" style="width: 600px;"/>  
 
 
@@ -42,7 +42,7 @@ I'll provide the snippet in two formats.
 The first one you can copy/paste into Visual Studio for Mac by going to Preferences > Text Editor > Code Snippets > C# group, and creating a new code snippet.  
 <img src="{{site.baseurl}}/images/XamarinMonthCodeSnippets/VSForMacSnippetScreen.png" style="width: 800px;"/>  
 
-The 2nd format is the entire snippet file as VS for Mac saves it. Just drop the file here: <b>~/Library/VisualStudio/7.0/Snippets</b> and you're good to go. (You may have to restart VS)
+The 2nd format is the entire snippet file as VS for Mac saves it. Just drop the file here: `~/Library/VisualStudio/7.0/Snippets` and you're good to go. (You may have to restart VS)
 
 <script src="https://gist.github.com/TomSoderling/06cbd9dd3800c1e4beae988c3847d2f9.js"></script> 
 
