@@ -8,7 +8,7 @@ comments: true
 tags: [C#]
 ---
 
-Thanks to Louis Matos' for organizing this Xamarin Month on the topic of Code Snippets! Check out the [twitter hashtag to find more posts](https://twitter.com/hashtag/xamarinmonth) or see the [monthly calendar of all posts here](https://luismts.com/code-snippetss-xamarin-month) from Louis.
+Thanks to Luis Matos' for organizing this Xamarin Month on the topic of Code Snippets! Check out the [twitter hashtag to find more posts](https://twitter.com/hashtag/xamarinmonth) or see the [monthly calendar of all posts here](https://luismts.com/code-snippetss-xamarin-month).
 
 This Xamarin Month was especially interesting to me because I love code snippets! They save lots of time by stubbing in repetitive code with just a few keystrokes. The snippet I'm posting is one I use almost every day and helps provide a consistent name and outline when writing unit tests.  
 
