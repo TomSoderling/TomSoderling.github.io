@@ -41,12 +41,11 @@ I'll provide the snippet in two formats.
 
 The first one you can copy/paste into Visual Studio for Mac by going to Preferences > Text Editor > Code Snippets > C# group, and creating a new code snippet.  
 <img src="{{site.baseurl}}/images/XamarinMonthCodeSnippets/VSForMacSnippetScreen.png" style="width: 800px;"/>  
-
-The 2nd format is the entire snippet file as VS for Mac saves it. Just drop the file here: `~/Library/VisualStudio/7.0/Snippets` and you're good to go. (You may have to restart VS)
-
-<script src="https://gist.github.com/TomSoderling/06cbd9dd3800c1e4beae988c3847d2f9.js"></script> 
+<script src="https://gist.github.com/TomSoderling/06cbd9dd3800c1e4beae988c3847d2f9.js"></script>
 
 
+The 2nd format is the entire snippet file as VS for Mac saves it. Just drop the file here: `~/Library/VisualStudio/7.0/Snippets` and you're good to go. (You may have to restart VS)  
+<script src="https://gist.github.com/TomSoderling/1de12a7669f4fa339d31ac2574ce3de1.js"></script>
 
 
 That's it! Hope this saves you a little time and typing! Please reach out to me on twitter if you have any comments or feedback.
