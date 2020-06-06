@@ -31,7 +31,7 @@ We also structure every unit test we write using the same basic outline, so anyo
 I set up this snippet to use the shortcut `test`, so by typing that and pressing tab twice, voila! The whole unit test is stubbed out for me:  
 <img src="{{site.baseurl}}/images/XamarinMonthCodeSnippets/InUse1.png" style="width: 600px;"/>  
 
-The snippet gives me a clue on what the first part of the name should be, `UnitUnderTest`, so I can enter that, press tab and move on to the other 2 parts of the name:  
+The snippet gives me a clue on what the first part of the name should be, `UnitUnderTest`. This snippet uses variables, so I can enter the first part of the name and press tab to move on to the other 2 parts of the name:  
 <img src="{{site.baseurl}}/images/XamarinMonthCodeSnippets/InUse2.png" style="width: 600px;"/>  
 
 
