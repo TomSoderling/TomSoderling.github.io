@@ -28,7 +28,7 @@ The first one you can copy/paste into Visual Studio for Mac by going to Preferen
 
 The 2nd format is the entire snippet file as VS for Mac saves it. Just drop the file here: ~/Library/VisualStudio/7.0/Snippets and you're good to go. (may have to restart VS)
 
-<script src="https://gist.github.com/TomSoderling/06cbd9dd3800c1e4beae988c3847d2f9"></script> 
+<script src="https://gist.github.com/TomSoderling/06cbd9dd3800c1e4beae988c3847d2f9.js"></script> 
 
 
 
