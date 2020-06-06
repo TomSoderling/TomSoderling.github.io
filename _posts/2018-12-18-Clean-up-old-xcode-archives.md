@@ -21,8 +21,9 @@ We write our unit tests using NUnit and follow the [Microsoft naming convention]
 These parts are sometimes hard for me to remember, so this snippet gives me some clues to jog my memory.  
 
 ## Outline
-We also structure every unit test we write using the same basic outline, so anyone on the team can more easily get up to speed on an unfamiliar test and understand what it's doing. That outline is known as the Triple-A (AAA) Pattern: Arrange, Act, Assert.
+We also structure every unit test we write using the same basic outline, so anyone on the team can more easily get up to speed on an unfamiliar test and understand what it's doing. That outline is known as the Triple-A (AAA) Pattern: Arrange, Act, Assert. You can [read more about that here.](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices#arranging-your-tests)
 
+## The Code
 I'll provide the snippet in two formats.  
 
 The first one you can copy/paste into Visual Studio for Mac by going to Preferences > Text Editor > Code Snippets > C# group, and creating a new code snippet.  
