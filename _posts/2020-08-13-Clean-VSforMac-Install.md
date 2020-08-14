@@ -1,14 +1,15 @@
 ---
 published: true
 layout: post
-title: How to do a clean reinstall for Visual Studio for Mac
+title: How to do a clean reinstall of Visual Studio for Mac
 date: 2020-08-13 01:23
 author: tom
 comments: true
 tags: [VSforMac]
 ---
 
-Sometimes you just need a new start. Here's an easy way to clean up all the bits from an existing Visual Studio for Mac install so you can reinstall it.  
+Sometimes you just need a new start.  
+Here's an easy way to wipe out all the bits from an existing Visual Studio for Mac install so you can do a clean reinstall.  
 
 You may want to save any code snippet files you've created. Copy this filter to a safe space: `~/Library/VisualStudio/7.0/Snippet`  
 
