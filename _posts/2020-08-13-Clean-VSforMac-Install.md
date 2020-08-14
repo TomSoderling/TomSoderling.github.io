@@ -9,7 +9,6 @@ tags: [VSforMac]
 ---
 
 Sometimes you just need a new start.  
-
 Here's an easy way to wipe out all the bits from an existing Visual Studio for Mac install so you can do a clean reinstall.  
 
 You may want to save any code snippet files you've created. Copy this folder to a safe place so it doesn't get axed: `~/Library/VisualStudio/7.0/Snippet`  
